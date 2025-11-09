@@ -1,24 +1,22 @@
-import { Meta, Preview, Props, Story } from '@storybook/addon-docs';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { SimpleTable } from '../src/SimpleTable';
-import readMe from '../README.md';
-export const title = 'SimpleTable';
 
-<Meta
-  title="SimpleTable"
-  component={ SimpleTable }
-  parameters={ {
-    jest: ['simple-table'],
-    notes: readMe
-  } }
-/>
+const meta = {
+  title: 'Base/SimpleTable',
+  parameters: {},
+  component: SimpleTable,
+  args: {}
+} satisfies Meta<typeof SimpleTable>;
 
-# SimpleTable
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-A simple table for displaying data.
-
-<Preview withToolbar>
-  <Story name="SimpleTable">
+export const Primary: Story = {
+  args: {},
+  render: ({ ...props }) => (
     <SimpleTable
+      {...props}
       keys={['name', 'qty', 'cost']}
       headings={{
         cost: 'Price',
@@ -40,23 +38,17 @@ A simple table for displaying data.
           cost: '£21.45',
           qty: '1',
           name: 'Text book'
-        },
+        }
       ]}
     />
-  </Story>
-</Preview>
+  )
+};
 
-<Props of={SimpleTable} />
-
-
-## Stories
-### Standard
-
-A standard SimpleTable.
-
-<Preview>
-  <Story name="Standard">
+export const Standard: Story = {
+  args: {},
+  render: ({ ...props }) => (
     <SimpleTable
+      {...props}
       keys={['name', 'qty', 'cost']}
       headings={{
         cost: 'Price',
@@ -78,8 +70,8 @@ A standard SimpleTable.
           cost: '£21.45',
           qty: '1',
           name: 'Text book'
-        },
+        }
       ]}
     />
-  </Story>
-</Preview>
+  )
+};
