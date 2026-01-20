@@ -1,3 +1,5 @@
+'use client';
+
 import { FC, HTMLAttributes, KeyboardEvent, ReactNode, SyntheticEvent, createElement as h, useRef, useState } from 'react';
 import { useIsMounted } from '@catalyse/client-component-helpers';
 import { StandardProps, classBuilder } from '@catalyse/component-helpers';
