@@ -1,10 +1,10 @@
 'use client';
 
 import { AnchorHTMLAttributes, FC, Suspense, ReactNode, createElement as h } from 'react';
-import { useIsMounted } from '@not-govuk/client-component-helpers';
-import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { Link, needSuspense, useLocation, useIsActive } from '@not-govuk/router';
-import { URI } from '@not-govuk/uri';
+import { useIsMounted } from '@catalyse/client-component-helpers';
+import { StandardProps, classBuilder } from '@catalyse/component-helpers';
+import { Link, needSuspense, useLocation, useIsActive } from '@catalyse/router';
+import { URI } from '@catalyse/uri';
 
 import '../assets/Anchor.scss';
 

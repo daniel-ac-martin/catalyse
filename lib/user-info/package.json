@@ -1,6 +1,6 @@
 {
-  "name": "@not-govuk/user-info",
-  "version": "0.16.3",
+  "name": "@catalyse/user-info",
+  "version": "0.0.0",
   "description": "A React context for providing information on the user.",
   "main": "src/UserInfo.ts",
   "exports": {
@@ -39,8 +39,8 @@
     "react": "^19.2.3"
   },
   "devDependencies": {
-    "@not-govuk/component-test-helpers": "workspace:*",
-    "@not-govuk/types": "workspace:*",
+    "@catalyse/component-test-helpers": "workspace:*",
+    "@catalyse/types": "workspace:*",
     "@types/react": "19.2.8",
     "jest": "30.2.0",
     "jest-environment-jsdom": "30.2.0",

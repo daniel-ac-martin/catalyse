@@ -1,12 +1,12 @@
 import type { FastifyPluginCallback } from 'fastify';
-import type { Cookie, FastifyConsentCookiesOptions } from '@not-govuk/fastify-consent-cookies';
+import type { Cookie, FastifyConsentCookiesOptions } from '@catalyse/fastify-consent-cookies';
 import type { Reply, ReplyFull, Request, RequestFull, SessionData } from './common';
 import type { CustomOptions as _CustomOptions } from './custom';
 import type { MemoryOptions as _MemoryOptions } from './memory';
 
 import { randomUUID } from 'node:crypto';
 import fp from 'fastify-plugin';
-import { defaultSecret, fastifyConsentCookies } from '@not-govuk/fastify-consent-cookies';
+import { defaultSecret, fastifyConsentCookies } from '@catalyse/fastify-consent-cookies';
 import { SessionStore } from './common';
 import { customSession } from './custom';
 import { memorySession } from './memory';

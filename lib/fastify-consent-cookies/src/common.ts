@@ -1,6 +1,6 @@
 import type { SerializeOptions } from 'cookie';
 import type { FastifyInstance, FastifyRequest as _Request, FastifyReply as _Reply } from 'fastify';
-import type { Promised } from '@not-govuk/types-helpers';
+import type { Promised } from '@catalyse/types-helpers';
 
 export type CookieOptions = Omit<SerializeOptions, 'encode'>;
 

@@ -1,4 +1,4 @@
-import type { Maybe } from '@not-govuk/types-helpers';
+import type { Maybe } from '@catalyse/types-helpers';
 
 export enum Mode {
   Server = 'server',

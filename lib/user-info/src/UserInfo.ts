@@ -1,4 +1,4 @@
-import type { Maybe, UserInfo } from '@not-govuk/types';
+import type { Maybe, UserInfo } from '@catalyse/types';
 
 import { Context, createContext, useContext } from 'react';
 

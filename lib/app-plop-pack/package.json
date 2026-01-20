@@ -1,6 +1,6 @@
 {
-  "name": "@not-govuk/app-plop-pack",
-  "version": "0.16.3",
+  "name": "@catalyse/app-plop-pack",
+  "version": "0.0.0",
   "description": "Generators for use within applications and prototypes.",
   "type": "module",
   "main": "src/index.js",
@@ -25,6 +25,6 @@
     "plop": "4.0.4"
   },
   "dependencies": {
-    "@not-govuk/plop-pack-internal": "workspace:^"
+    "@catalyse/plop-pack": "workspace:^"
   }
 }

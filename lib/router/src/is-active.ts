@@ -1,5 +1,5 @@
 import type { UseLocation } from './common';
-import { URI } from '@not-govuk/uri';
+import { URI } from '@catalyse/uri';
 
 const includes = (haystack: object, needle: object): boolean => {
   const subIncludes = (haystack: any, needle: any): boolean => (

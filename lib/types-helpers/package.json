@@ -1,6 +1,6 @@
 {
-  "name": "@not-govuk/types-helpers",
-  "version": "0.16.3",
+  "name": "@catalyse/types-helpers",
+  "version": "0.0.0",
   "description": "Types to aid in defining other types.",
   "main": "src/index.ts",
   "exports": {

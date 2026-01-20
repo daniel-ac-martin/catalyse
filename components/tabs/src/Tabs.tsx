@@ -1,7 +1,7 @@
 import { FC, HTMLAttributes, KeyboardEvent, ReactNode, SyntheticEvent, createElement as h, useRef, useState } from 'react';
-import { useIsMounted } from '@not-govuk/client-component-helpers';
-import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
-import { useLocation } from '@not-govuk/router';
+import { useIsMounted } from '@catalyse/client-component-helpers';
+import { StandardProps, classBuilder } from '@catalyse/component-helpers';
+import { useLocation } from '@catalyse/router';
 
 import '../assets/Tabs.scss';
 

@@ -1,5 +1,5 @@
 import { FC, HTMLAttributes, ReactNode, createElement as h } from 'react';
-import { StandardProps, classBuilder } from '@not-govuk/component-helpers';
+import { StandardProps, classBuilder } from '@catalyse/component-helpers';
 
 import '../assets/SimpleTable.scss';
 

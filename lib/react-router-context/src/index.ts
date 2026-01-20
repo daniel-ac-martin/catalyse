@@ -1,5 +1,5 @@
 import type { RouterContext, RouterContextProvider } from 'react-router';
-import type { Maybe, UserInfo } from '@not-govuk/types';
+import type { Maybe, UserInfo } from '@catalyse/types';
 
 // We use a hack to avoid `createContext` from 'react-router' which relies on
 // object id's

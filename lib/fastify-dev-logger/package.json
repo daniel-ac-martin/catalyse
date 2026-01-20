@@ -1,6 +1,6 @@
 {
-  "name": "@not-govuk/fastify-dev-logger",
-  "version": "0.16.3",
+  "name": "@catalyse/fastify-dev-logger",
+  "version": "0.0.0",
   "description": "A Pino transport for pretty printing Fastify logs in dev environments.",
   "type": "module",
   "main": "src/index.js",

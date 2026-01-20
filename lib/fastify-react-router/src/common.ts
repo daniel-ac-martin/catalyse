@@ -8,12 +8,12 @@ import type {
   ServerBuild,
   UNSAFE_MiddlewareEnabled as MiddlewareEnabled
 } from 'react-router';
-import type { RouteHandlerMethod } from '@not-govuk/fastify-auth';
-import type { FastifyReply } from '@not-govuk/fastify-harden';
-import { EnhancedProvider } from '@not-govuk/react-router-context';
+import type { RouteHandlerMethod } from '@catalyse/fastify-auth';
+import type { FastifyReply } from '@catalyse/fastify-harden';
+import { EnhancedProvider } from '@catalyse/react-router-context';
 
 import { RouterContextProvider, createRequestHandler } from 'react-router';
-import { cspNonceContext, userInfoContext } from '@not-govuk/react-router-context';
+import { cspNonceContext, userInfoContext } from '@catalyse/react-router-context';
 import { createRequest, sendResponse } from './fetch';
 
 type MaybePromise<T> = T | Promise<T>;

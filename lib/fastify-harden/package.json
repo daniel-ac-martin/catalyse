@@ -1,6 +1,6 @@
 {
-  "name": "@not-govuk/fastify-harden",
-  "version": "0.16.3",
+  "name": "@catalyse/fastify-harden",
+  "version": "0.0.0",
   "description": "Fastify plugin for extra cyber-security hardening.",
   "main": "src/index.ts",
   "exports": {

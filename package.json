@@ -1,6 +1,6 @@
 {
-  "name": "not-govuk",
-  "version": "0.16.3",
+  "name": "catalyse",
+  "version": "0.0.0",
   "description": "A framework for quickly building digital services for government.",
   "bin": "lib/create/bin/create",
   "scripts": {
@@ -11,7 +11,7 @@
     "pnpm": "pnpm",
     "pnpm:all": "npm run pnpm -- -r",
     "pnpm:apps": "npm run pnpm:all -- --filter './apps/**'",
-    "pnpm:libs": "npm run pnpm:all -- --filter './components/**' --filter './components-internal/**' --filter './lib/**' --filter './lib-govuk/**'",
+    "pnpm:libs": "npm run pnpm:all -- --filter './components/**' --filter './lib/**'",
     "pnpm:storybook": "npm run pnpm:all -- --filter './apps/storybook'",
     "all:build": "npm run pnpm:all -- run build",
     "all:clean": "npm run pnpm:all -- run clean",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daniel-ac-martin/NotGovUK.git"
+    "url": "git+https://github.com/daniel-ac-martin/catalyse.git"
   },
   "keywords": [
     "react-components"
@@ -45,12 +45,12 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daniel-ac-martin/NotGovUK/issues"
+    "url": "https://github.com/daniel-ac-martin/catalyse/issues"
   },
-  "homepage": "https://github.com/daniel-ac-martin/NotGovUK#readme",
+  "homepage": "https://github.com/daniel-ac-martin/catalyse#readme",
   "dependencies": {
-    "@not-govuk/docs-components": "workspace:*",
-    "@not-govuk/user-info": "workspace:*",
+    "@catalyse/docs-components": "workspace:*",
+    "@catalyse/user-info": "workspace:*",
     "@storybook/addon-docs": "9.1.17",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -62,7 +62,7 @@
     "@babel/preset-env": "7.28.6",
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
-    "@not-govuk/plop-pack": "workspace:*",
+    "@catalyse/plop-pack": "workspace:*",
     "@types/jest": "30.0.0",
     "@types/react": "19.2.8",
     "babel-jest": "30.2.0",

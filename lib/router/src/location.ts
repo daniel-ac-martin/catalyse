@@ -1,6 +1,6 @@
 import type { Location as _Location } from 'react-router';
 import type { Location, UseLocation } from './common';
-import { qsParse } from '@not-govuk/uri';
+import { qsParse } from '@catalyse/uri';
 
 export type _UseLocation = () => _Location;
 

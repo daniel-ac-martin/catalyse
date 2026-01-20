@@ -1,5 +1,5 @@
 import { createElement as h } from 'react';
-import { render, screen } from '@not-govuk/component-test-helpers';
+import { render, screen } from '@catalyse/component-test-helpers';
 import Tabs from '../src/Tabs';
 
 describe('Tabs', () => {

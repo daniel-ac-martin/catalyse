@@ -1,6 +1,6 @@
 import type { FastifyInstance } from 'fastify';
-import type { Request as _Request, RequestFull as _RequestFull, Reply, ReplyFull } from '@not-govuk/fastify-consent-cookies';
-import type { Promised } from '@not-govuk/types-helpers';
+import type { Request as _Request, RequestFull as _RequestFull, Reply, ReplyFull } from '@catalyse/fastify-consent-cookies';
+import type { Promised } from '@catalyse/types-helpers';
 
 export enum SessionStore {
   Cookie = 'cookie',

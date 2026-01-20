@@ -1,6 +1,6 @@
 {
-  "name": "@not-govuk/docs-components",
-  "version": "0.16.3",
+  "name": "@catalyse/docs-components",
+  "version": "0.0.0",
   "description": "React components for use in documentation.",
   "main": "src/index.ts",
   "exports": {
@@ -37,10 +37,10 @@
     "react-components"
   ],
   "dependencies": {
-    "@not-govuk/component-helpers": "workspace:^",
-    "@not-govuk/memoize": "workspace:^",
-    "@not-govuk/simple-table": "workspace:^",
-    "@not-govuk/tabs-internal": "workspace:^",
+    "@catalyse/component-helpers": "workspace:^",
+    "@catalyse/memoize": "workspace:^",
+    "@catalyse/simple-table": "workspace:^",
+    "@catalyse/tabs": "workspace:^",
     "prettier": "^3.8.0",
     "prismjs": "^1.30.0",
     "prismjs-github": "^1.0.0",

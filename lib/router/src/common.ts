@@ -1,5 +1,5 @@
 import type { LinkProps as _LinkProps, Location as _Location, NavigateFunction } from 'react-router';
-import type { Query } from '@not-govuk/uri';
+import type { Query } from '@catalyse/uri';
 
 export type LinkProps = Omit<_LinkProps, 'relative' | 'reloadDocument' | 'state' | 'unstable_viewTransition'>
 

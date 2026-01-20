@@ -1,14 +1,14 @@
 import type { FastifyInstance, FastifyServerOptions, onCloseAsyncHookHandler, RouteHandlerMethod } from 'fastify';
 import type { RateLimitPluginOptions } from '@fastify/rate-limit';
-import type { FastifyAuthOptions } from '@not-govuk/fastify-auth';
-import type { FastifyHardenOptions } from '@not-govuk/fastify-harden';
-import type { Maybe } from '@not-govuk/types-helpers';
+import type { FastifyAuthOptions } from '@catalyse/fastify-auth';
+import type { FastifyHardenOptions } from '@catalyse/fastify-harden';
+import type { Maybe } from '@catalyse/types-helpers';
 
 import closeWithGrace from 'close-with-grace';
 import _Fastify from 'fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
-import fastifyAuth, { AuthMethod } from '@not-govuk/fastify-auth';
-import fastifyHarden from '@not-govuk/fastify-harden';
+import fastifyAuth, { AuthMethod } from '@catalyse/fastify-auth';
+import fastifyHarden from '@catalyse/fastify-harden';
 import { NodeEnv } from './config-helpers';
 
 type SessionOptions = Required<FastifyAuthOptions>['session'];
@@ -90,7 +90,7 @@ export const Fastify = ({
     ...stdLogger,
     level: 'debug',
     transport: {
-      target: '@not-govuk/fastify-dev-logger'
+      target: '@catalyse/fastify-dev-logger'
     }
   };
   const logger = (
@@ -173,5 +173,5 @@ export const Fastify = ({
 export default Fastify;
 export type { FastifyInstance, RouteHandlerMethod };
 export { AuthMethod };
-export { SessionStore } from '@not-govuk/fastify-auth';
+export { SessionStore } from '@catalyse/fastify-auth';
 export * from './config-helpers';

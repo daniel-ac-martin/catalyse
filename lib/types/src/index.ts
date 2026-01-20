@@ -23,4 +23,4 @@ export type FullUserInfo = ServersideUserInfo & {
   refreshToken?: string
 };
 
-export * from '@not-govuk/types-helpers';
+export * from '@catalyse/types-helpers';

@@ -1,5 +1,5 @@
 cp = cp -P --preserve=all
-patch_package = sed -Ei 's/"@(not-govuk)\/([^"]+)": "workspace:(.+)"/"@\1\/\2": "\3"/'
+patch_package = sed -Ei 's/"@(catalyse)\/([^"]+)": "workspace:(.+)"/"@\1\/\2": "\3"/'
 strip_package = jq '{ scripts: .scripts, devDependencies: .devDependencies }'
 build_dir = ./build
 dist_dir = ./dist

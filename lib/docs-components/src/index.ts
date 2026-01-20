@@ -1,5 +1,5 @@
 import { ComponentProps, FC, Fragment, ReactElement, ReactNode, createElement as h } from 'react';
-import { id } from '@not-govuk/component-helpers';
+import { id } from '@catalyse/component-helpers';
 import { ReactPreview } from './ReactPreview';
 import { useDocs } from './context';
 
