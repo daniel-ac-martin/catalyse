@@ -1,0 +1,104 @@
+{
+  "extends": [
+    "config:recommended"
+  ],
+  "minimumReleaseAge": "2 days",
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchPackageNames": [
+        "cypress/included",
+        "cypress"
+      ],
+      "groupName": "cypress"
+    },
+    {
+      "matchPackageNames": [
+        "@types/babel-jest",
+        "@types/jest",
+        "@types/ts-jest",
+        "babel-jest",
+        "jest",
+        "jest-environment-jsdom",
+        "ts-jest",
+        "@jest/**"
+      ],
+      "groupName": "jest"
+    },
+    {
+      "matchPackageNames": [
+        "@types/node",
+        "node"
+      ],
+      "groupName": "node",
+      "allowedVersions": "/^[0-9]*[02468][.\\-]/"
+    },
+    {
+      "matchPackageNames": [
+        "node-plop",
+        "plop"
+      ],
+      "groupName": "plop"
+    },
+    {
+      "matchPackageNames": [
+        "@types/react",
+        "@types/react-dom",
+        "react",
+        "react-dom",
+        "react-is"
+      ],
+      "groupName": "react"
+    },
+    {
+      "matchPackageNames": [
+        "@types/react-router",
+        "@types/react-router-dom",
+        "react-router",
+        "react-router-dom",
+        "@react-router/**"
+      ],
+      "groupName": "react-router"
+    },
+    {
+      "matchPackageNames": [
+        "sass",
+        "sass-embedded"
+      ],
+      "groupName": "sass"
+    },
+    {
+      "matchPackageNames": [
+        "mdx-js",
+        "storybook",
+        "@mdx-js/**",
+        "@storybook/**"
+      ],
+      "groupName": "storybook"
+    },
+    {
+      "matchPackageNames": [
+        "@testing-library/jest-dom",
+        "@testing-library/react",
+        "@testing-library/user-event",
+        "@testing-library/**"
+      ],
+      "groupName": "testing-library"
+    },
+    {
+      "groupName": "zap",
+      "matchPackageNames": [
+        "zaproxy/**"
+      ]
+    }
+  ],
+  "rangeStrategy": "bump",
+  "schedule": [
+    "before 3am on Monday"
+  ]
+}
