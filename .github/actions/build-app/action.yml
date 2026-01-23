@@ -1,5 +1,5 @@
 name: Build application
-description: Build a NotGovUK application
+description: Build a Catalyse application
 inputs:
   app:
     required: false

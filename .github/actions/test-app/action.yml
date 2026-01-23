@@ -1,5 +1,5 @@
 name: Test application
-description: Test a NotGovUK application or deployment
+description: Test a Catalyse application or deployment
 inputs:
   app:
     required: false

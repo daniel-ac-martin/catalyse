@@ -1,5 +1,5 @@
 name: Set-up
-description: Set-up for building, testing and deployment of NotGovUK projects
+description: Set-up for building, testing and deployment of Catalyse projects
 inputs:
   node:
     description: The version of Node.js to use.
