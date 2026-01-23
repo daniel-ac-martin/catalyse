@@ -1,8 +1,8 @@
 Catalyse - Simple components
 ============================
 
-Just the simple Catalyse components, that will work with Next.js. (Eventually we
-hope to deprecate this package in favour of just using the main
+Just the simple Catalyse [React] components, that will work with Next.js.
+(Eventually we hope to deprecate this package in favour of just using the main
 `@catlyse/components` package.)
 
 
@@ -65,3 +65,6 @@ npm run build
 ```shell
 npm run clean
 ```
+
+
+[React]: https://reactjs.org/
