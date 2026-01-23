@@ -1,7 +1,7 @@
 Catalyse - Components
 =====================
 
-All of the Catalyse components, in a single package.
+All of the Catalyse [React] components, in a single package.
 
 
 Using this package
@@ -64,5 +64,5 @@ npm run build
 npm run clean
 ```
 
-[GOV.UK Design System]: https://design-system.service.gov.uk/
+
 [React]: https://reactjs.org/
