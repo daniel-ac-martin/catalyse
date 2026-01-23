@@ -1,4 +1,4 @@
-NotGovUK - Fastify Dev Logger
+Catalyse - Fastify Dev Logger
 =============================
 
 A Pino transport for pretty printing [Fastify] logs in **dev** environments.
@@ -22,19 +22,19 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @not-govuk/fastify-dev-logger
+npm install -D @catalyse/fastify-dev-logger
 ```
 
 Then use it in your code as follows:
 
 ```js
-import fastifyDevLogger from '@not-govuk/fastify-dev-logger';
+import fastifyDevLogger from '@catalyse/fastify-dev-logger';
 import Fastify from 'fastify';
 
 const httpd = Fastify({
   logger: {
     transport: {
-      target: '@not-govuk/fastify-dev-logger'
+      target: '@catalyse/fastify-dev-logger'
     }
   }
 });

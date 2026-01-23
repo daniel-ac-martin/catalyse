@@ -1,4 +1,4 @@
-NotGovUk - Simple Table
+Catalyse - Simple Table
 =======================
 
 A simple table for displaying data.
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/simple-table
+npm install -S @catalyse/simple-table
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import SimpleTable from '@not-govuk/simple-table';
+import SimpleTable from '@catalyse/simple-table';
 
 export const MyComponent = props => (
   <SimpleTable

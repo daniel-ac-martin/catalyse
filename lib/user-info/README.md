@@ -1,4 +1,4 @@
-NotGovUK - User Info
+Catalyse - User Info
 ====================
 
 A React context (with hook) for providing information on the user.
@@ -20,14 +20,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/user-info
+npm install -S @catalyse/user-info
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import { UserInfoContext, useUserInfo } from '@not-govuk/user-info';
+import { UserInfoContext, useUserInfo } from '@catalyse/user-info';
 
 const dummyUserInfo = {
   username: 'DummyUser',

@@ -1,7 +1,7 @@
-NotGovUK - Types
+Catalyse - Types
 ================
 
-Common types used across NotGovUK.
+Common types used across Catalyse.
 
 
 Using this package
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S -D @not-govuk/types
+npm install -S -D @catalyse/types
 ```
 
 Then use it in your code as follows:
 
 ```js
-import type { UserInfo } from '@not-govuk/types';
+import type { UserInfo } from '@catalyse/types';
 ```
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@catalyse/storybook",
   "version": "0.0.0",
-  "description": "Storybook for NotGovUK.",
+  "description": "Storybook for Catalyse.",
   "private": true,
   "type": "module",
   "scripts": {

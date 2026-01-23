@@ -1,7 +1,7 @@
 {
   "name": "@catalyse/react-router-context",
   "version": "0.0.0",
-  "description": "A collection of React Router contexts for use in NotGovUK applications.",
+  "description": "A collection of React Router contexts for use in Catalyse applications.",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts"

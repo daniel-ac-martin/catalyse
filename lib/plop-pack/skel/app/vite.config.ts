@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import mdx from '@mdx-js/rollup'
-import html from '@not-govuk/vite-html-react';
+import html from '@catalyse/vite-html-react';
 import { reactRouter } from '@react-router/dev/vite';
 
 export default defineConfig({

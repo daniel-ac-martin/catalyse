@@ -1,7 +1,7 @@
 {
   "name": "@catalyse/docs",
   "version": "0.0.0",
-  "description": "NotGovUK documentation website.",
+  "description": "Catalyse documentation website.",
   "private": true,
   "type": "module",
   "main": "dist/server/index.js",

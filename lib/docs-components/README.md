@@ -1,5 +1,5 @@
-Not Govuk - Docs Components
-===========================
+Catalyse - Docs Components
+==========================
 
 React components for use in documentation.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/docs-components
+npm install -S @catalyse/docs-components
 ```
 
 Then use it in your code as follows:
 
 ```js
-import docsComponents from '@not-govuk/docs-components';
+import docsComponents from '@catalyse/docs-components';
 
 // WRITEME
 

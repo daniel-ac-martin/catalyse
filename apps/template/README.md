@@ -1,4 +1,4 @@
-NotGovUK - Template application
+Catalyse - Template application
 ===============================
 
 This is a test application where we can ensure that features of the framework

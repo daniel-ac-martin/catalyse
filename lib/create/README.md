@@ -1,4 +1,4 @@
-NotGovUK - Create
+Catalyse - Create
 =================
 
 A project and prototype initialiser.
@@ -22,7 +22,7 @@ git remote add origin https://github.com/MY-USER/MY-PROJECT.git
 Once that is set up you can run:
 
 ```shell
-npm init @not-govuk
+npm init @catalyse
 ```
 
 Follow the prompts to set up your new project.

@@ -1,4 +1,4 @@
-NotGovUK - Fastify Session
+Catalyse - Fastify Session
 ==========================
 
 Fastify plugin to provide a session in `req.session`. Supports a few modes of
@@ -14,14 +14,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/fastify-session
+npm install -S @catalyse/fastify-session
 ```
 
 Then use it in your code as follows:
 
 ```js
 import Fastify from 'fastify';
-import { SessionStore, fastifySession } from '@not-govuk/fastify-session';
+import { SessionStore, fastifySession } from '@catalyse/fastify-session';
 
 const httpd = Fastify();
 
@@ -76,7 +76,7 @@ Options object:
   When using a `'custom'` store, this function must be provided to write the
   provided session data according to the provided id.
 - **`cookies: object`**
-  See: https://www.npmjs.com/package/@not-govuk/fastify-consent-cookies
+  See: https://www.npmjs.com/package/@catalyse/fastify-consent-cookies
 
   Make sure that you at least provide a secret.
   - **`secret: string`**

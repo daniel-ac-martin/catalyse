@@ -1,4 +1,4 @@
-NotGovUK - Application plop-pack
+Catalyse - Application plop-pack
 ================================
 
 Generators for use within applications and prototypes.
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @not-govuk/app-plop-pack
+npm install -D @catalyse/app-plop-pack
 ```
 
 Then use it in your `plopfile.js` as follows:
 
 ```js
 module.exports = plop => {
-  plop.load('@not-govuk/app-plop-pack');
+  plop.load('@catalyse/app-plop-pack');
 
   // ...
 }

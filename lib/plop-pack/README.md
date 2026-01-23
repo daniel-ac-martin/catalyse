@@ -1,4 +1,4 @@
-NotGovUK - Plop Pack
+Catalyse - Plop Pack
 ====================
 
 Plop pack with misc tools.
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @not-govuk/plop-pack
+npm install -D @catalyse/plop-pack
 ```
 
 Then use it in your `plopfile.js` as follows:
 
 ```js
 module.exports = plop => {
-  plop.load('@not-govuk/plop-pack');
+  plop.load('@catalyse/plop-pack');
 
   // ...
 }

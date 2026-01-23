@@ -1,4 +1,4 @@
-NotGovUK - Anchor List
+Catalyse - Anchor List
 ======================
 
 A list of anchors. Items that contain links to the current page are
@@ -11,14 +11,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/anchor-list
+npm install -S @catalyse/anchor-list
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import AnchorList from '@not-govuk/anchor-list';
+import AnchorList from '@catalyse/anchor-list';
 
 export const MyComponent = props => (
   <AnchorList items={[

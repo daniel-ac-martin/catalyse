@@ -1,4 +1,4 @@
-NotGovUK - Types-Helpers
+Catalyse - Types-Helpers
 ========================
 
 Types to aid in defining other types.
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S -D @not-govuk/types-helpers
+npm install -S -D @catalyse/types-helpers
 ```
 
 Then use it in your code as follows:
 
 ```ts
-import type { Maybe, Promised } from '@not-govuk/types-helpers';
+import type { Maybe, Promised } from '@catalyse/types-helpers';
 
 const foo = (): Maybe<string> => {
   if (something) {

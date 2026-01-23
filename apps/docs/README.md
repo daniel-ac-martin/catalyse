@@ -1,7 +1,7 @@
-NotGovUK - Documentation website
+Catalyse - Documentation website
 ================================
 
-This the source code for the NotGovUK documentation website: https://not-gov.uk
+This the source code for the Catalyse documentation website.
 
 ## Welcome to React Router!
 

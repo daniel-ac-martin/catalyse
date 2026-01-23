@@ -1,5 +1,5 @@
-Not Govuk - Form
-================
+Catalyse - Form
+===============
 
 A component to collect information from the user.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/form
+npm install -S @catalyse/form
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import Form from '@not-govuk/form';
+import Form from '@catalyse/form';
 
 export const MyComponent = props => (
   <Form action="/result" method="get">

@@ -1,4 +1,4 @@
-NotGovUK - Vite HTML React
+Catalyse - Vite HTML React
 ==========================
 
 A [Vite] plugin for importing HTML files as [React] components.
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @not-govuk/vite-html-react
+npm install -D @catalyse/vite-html-react
 ```
 
 Then use it in your `vite.config.js` as follows:
 
 ```js
 import { defineConfig } from 'vite';
-import html from '@not-govuk/vite-html-react';
+import html from '@catalyse/vite-html-react';
 
 export default defineConfig({
   plugins: [

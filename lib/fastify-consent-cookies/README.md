@@ -1,4 +1,4 @@
-NotGovUK - Fastify Consent-Cookies
+Catalyse - Fastify Consent-Cookies
 ==================================
 
 Fastify plugin to parse and set cookies only with user consent. This
@@ -23,14 +23,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/fastify-consent-cookies
+npm install -S @catalyse/fastify-consent-cookies
 ```
 
 Then use it in your code as follows:
 
 ```ts
 import Fastify from 'fastify';
-import { type Cookie, type FastifyConsentCookiesOptions, fastifyConsentCookies } from '@not-govuk/fastify-consent-cookies';
+import { type Cookie, type FastifyConsentCookiesOptions, fastifyConsentCookies } from '@catalyse/fastify-consent-cookies';
 
 const myCookies = [
   {

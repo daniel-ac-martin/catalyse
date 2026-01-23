@@ -1,4 +1,4 @@
-NotGovUK - Fastify-Auth
+Catalyse - Fastify-Auth
 =======================
 
 Authentication plugin for Fastify. Allows you to authenticate uses by a variety
@@ -13,14 +13,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/fastify-auth
+npm install -S @catalyse/fastify-auth
 ```
 
 Then use it in your code as follows:
 
 ```ts
 import Fastify from 'fastify';
-import { AuthMethod, fastifyAuth } from '@not-govuk/fastify-auth';
+import { AuthMethod, fastifyAuth } from '@catalyse/fastify-auth';
 
 const httpd = Fastify();
 
@@ -74,7 +74,7 @@ Options object:
   all features when those features require certain roles. Users can typically
   choose to log-in to acquire extra permissions.
 - **`session: object`**
-  See: https://www.npmjs.com/package/@not-govuk/fastify-session
+  See: https://www.npmjs.com/package/@catalyse/fastify-session
 
 
 ### `req.user: object`

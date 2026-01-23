@@ -1,4 +1,4 @@
-NotGovUK - Fastify Harden
+Catalyse - Fastify Harden
 =========================
 
 Fastify plugin for extra cyber-security hardening.
@@ -15,14 +15,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/fastify-harden
+npm install -S @catalyse/fastify-harden
 ```
 
 Then use it in your code as follows:
 
 ```js
 import Fastify from 'fastify';
-import fastifyHarden from '@not-govuk/fastify-harden';
+import fastifyHarden from '@catalyse/fastify-harden';
 
 const httpd = Fastify({});
 

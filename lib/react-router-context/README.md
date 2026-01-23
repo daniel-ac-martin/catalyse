@@ -1,7 +1,7 @@
-NotGovUK - React-Router-Context
+Catalyse - React-Router-Context
 ===============================
 
-A collection of React Router contexts for use in NotGovUK applications.
+A collection of React Router contexts for use in Catalyse applications.
 
 
 Using this package
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/react-router-context
+npm install -S @catalyse/react-router-context
 ```
 
 Then use it in your code as follows:
 
 ```js
-import type { RouterContextProvider } from '@not-govuk/react-router-context'; // Replaces import from react-router
-import { userInfoContext, cspNonceContext } from '@not-govuk/react-router-context';
+import type { RouterContextProvider } from '@catalyse/react-router-context'; // Replaces import from react-router
+import { userInfoContext, cspNonceContext } from '@catalyse/react-router-context';
 
 export const loader = async ({ context: _context }: Route.LoaderArgs) => {
   const context = _context as RouterContextProvider; // Needed to get extra properties recognised

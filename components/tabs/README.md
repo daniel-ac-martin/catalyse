@@ -1,4 +1,4 @@
-NotGovUK - Tabs
+Catalyse - Tabs
 ===============
 
 A component for multiple, related sections of content.
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/tabs
+npm install -S @catalyse/tabs
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import Tabs from '@not-govuk/tabs';
+import Tabs from '@catalyse/tabs';
 
 export const MyComponent = props => (
   <Tabs

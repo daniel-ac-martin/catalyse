@@ -1,4 +1,4 @@
-NotGovUK - Memoize
+Catalyse - Memoize
 ==================
 
 Higher-order functions for memoizing pure functions.
@@ -17,13 +17,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/memoize
+npm install -S @catalyse/memoize
 ```
 
 Then use it in your code as follows:
 
 ```js
-import memoize from '@not-govuk/memoize';
+import memoize from '@catalyse/memoize';
 
 const myPureFunction = str => str.length;
 

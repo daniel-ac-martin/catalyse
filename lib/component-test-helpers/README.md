@@ -1,4 +1,4 @@
-Not Govuk - Component Test Helpers
+Catalyse - Component Test Helpers
 ==================================
 
 Helper functions for testing React components.
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/component-test-helpers
+npm install -S @catalyse/component-test-helpers
 ```
 
 Then use it in your code as follows:
 
 ```js
-import componentTestHelpers from '@not-govuk/component-test-helpers';
+import componentTestHelpers from '@catalyse/component-test-helpers';
 
 // WRITEME
 

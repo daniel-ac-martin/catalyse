@@ -1,4 +1,4 @@
-NotGovUK - URI
+Catalyse - URI
 ==============
 
 A more forgiving alternative to JavaScript's standard URL class.
@@ -11,13 +11,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/uri
+npm install -S @catalyse/uri
 ```
 
 Then use it in your code as follows:
 
 ```js
-import { URI } from '@not-govuk/uri';
+import { URI } from '@catalyse/uri';
 
 // WRITEME
 

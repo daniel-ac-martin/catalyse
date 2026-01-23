@@ -1,4 +1,4 @@
-NotGovUK - Fastify
+Catalyse - Fastify
 ==================
 
 A customised Fastify server for running websites.
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/fastify
+npm install -S @catalyse/fastify
 ```
 
 Then use it in your code as follows:
 
 ```js
-import Fastify from '@not-govuk/fastify';
+import Fastify from '@catalyse/fastify';
 
 const httpd = Fastify({});
 

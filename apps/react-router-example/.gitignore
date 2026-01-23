@@ -6,7 +6,7 @@
 /.react-router/
 /build/
 
-# NotGovUK extras
+# Catalyse extras
 .cypress/
 dist/
 package-lock.json

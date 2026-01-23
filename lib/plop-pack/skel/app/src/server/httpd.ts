@@ -1,6 +1,6 @@
-import type { FastifyInstance, IsFunction, OnClose } from '@not-govuk/fastify';
+import type { FastifyInstance, IsFunction, OnClose } from '@catalyse/fastify';
 
-import { AuthMethod, Fastify, Mode, SessionStore } from '@not-govuk/fastify';
+import { AuthMethod, Fastify, Mode, SessionStore } from '@catalyse/fastify';
 import config from './config';
 
 type Server = FastifyInstance;

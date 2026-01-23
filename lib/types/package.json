@@ -1,7 +1,7 @@
 {
   "name": "@catalyse/types",
   "version": "0.0.0",
-  "description": "Common types used across NotGovUK.",
+  "description": "Common types used across Catalyse.",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts"

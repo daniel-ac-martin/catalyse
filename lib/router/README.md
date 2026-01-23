@@ -1,4 +1,4 @@
-NotGovUK - Router
+Catalyse - Router
 =================
 
 An abstraction layer over the routers from react-router and Next.js.
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/router
+npm install -S @catalyse/router
 ```
 
 Then use it in your code as follows:
 
 ```js
-import router from '@not-govuk/router';
+import router from '@catalyse/router';
 
 // WRITEME
 

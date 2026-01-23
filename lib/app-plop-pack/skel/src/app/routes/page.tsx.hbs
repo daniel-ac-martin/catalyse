@@ -7,13 +7,13 @@ import type { Route } from "./+types/{{{name}}}";
 import { data } from 'react-router';
 {{/if}}
 {{#if query}}
-import { useLocation } from '@not-govuk/router';
+import { useLocation } from '@catalyse/router';
 {{/if}}
 {{#if userinfo}}
 {{#if data}}
-import { userInfoContext } from '@not-govuk/react-router-context';
+import { userInfoContext } from '@catalyse/react-router-context';
 {{/if}}
-import { useUserInfo } from '@not-govuk/user-info';
+import { useUserInfo } from '@catalyse/user-info';
 {{/if}}
 import { siteTitle } from '../config';
 

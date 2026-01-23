@@ -1,5 +1,5 @@
-Not Govuk - Forms
-=================
+Catalyse - Forms
+================
 
 An intuitive isometric forms framework for React.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @not-govuk/forms
+npm install -S @catalyse/forms
 ```
 
 Then use it in your code as follows:
 
 ```js
-import forms from '@not-govuk/forms';
+import forms from '@catalyse/forms';
 
 // WRITEME
 
