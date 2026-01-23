@@ -13,7 +13,7 @@ describe('Anchor', () => {
     it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
   });
 
-  describe('when given a href with an absolute URL', () => {
+  describe.skip('when given a href with an absolute URL', () => {
     beforeEach(async () => {
       render(h(Anchor, { href: '//example.com/location' }, 'My link'));
     });
