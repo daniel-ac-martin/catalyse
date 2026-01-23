@@ -23,11 +23,11 @@ import { AnchorList } from '@catalyse/simple-components';
 
 export const MyComponent = props => (
   <AnchorList
-    items=[
+    items={[
       { href: '/foo', text: 'Foo' },
       { href: '/bar', text: 'Bar' },
       { href: '/baz', text: 'Baz' }
-    ]
+    ]}
   />
 );
 
