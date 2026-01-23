@@ -20,7 +20,7 @@ export default function GetStarted() {
   return (
     <>
       <h1>{title}</h1>
-      <h2><A href="/">About {sitetitle}</A></h2>
+      <h2><A href="/">About {siteTitle}</A></h2>
       <h2><A href="/get-started">Get started</A></h2>
       <AnchorList items={[
         { href: '/working-on-your-project', text: 'Working on your project' }
