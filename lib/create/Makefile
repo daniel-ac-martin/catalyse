@@ -29,6 +29,7 @@ sources := $(wildcard \
 	$(source_dir)/apps/storybook/README \
 	$(source_dir)/apps/storybook/src/app.scss \
 	$(source_dir)/apps/storybook/src/decorators.tsx \
+	$(source_dir)/apps/storybook/src/main.ts \
 	$(source_dir)/apps/storybook/src/manager.ts \
 	$(source_dir)/apps/storybook/src/preview.ts \
 	$(source_dir)/apps/README.md \
