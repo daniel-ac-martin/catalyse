@@ -4,7 +4,7 @@ import { siteTitle } from '../config';
 import Markdown from '../../../../../docs/about.md';
 
 const title = siteTitle;
-const description = 'An implementation of the GOV.UK Design System in React that provides support for writing internal applications in addition to public ones';
+const description = 'A collection of tools and libraries for building React applications, projects, and design systems.';
 
 export function meta({}: Route.MetaArgs) {
   return [

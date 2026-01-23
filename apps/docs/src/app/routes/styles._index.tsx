@@ -19,10 +19,7 @@ export default function Styles() {
     <>
       <h1>{title}</h1>
       <p>
-        Make your service look and feel like GOV.UK.
-      </p>
-      <p>
-        If you need to apply styles manually, you should still follow existing GOV.UK conventions. For example, do not assign new meanings to colours, do not change the style of buttons or adjust the thickness of borders on form inputs.
+        The basic styles of our design sytem.
       </p>
     </>
   );
