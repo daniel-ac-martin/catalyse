@@ -46,7 +46,7 @@ sources := $(wildcard \
 	$(source_dir)/pnpm-workspace.yaml \
 	$(source_dir)/tsconfig*.json \
 )
-docs_app = govuk-docs
+docs_app = docs
 docs_source_dir = $(source_dir)/apps/$(docs_app)
 docs_target_dir = $(target_dir)/apps/docs
 docs_sources := $(wildcard \
