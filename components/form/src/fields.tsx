@@ -1,10 +1,10 @@
-import type { ComponentType, InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes, } from 'react';
+import type { ComponentType, FC, InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes, } from 'react';
 import type { FieldProps } from '@catalyse/forms';
 
 import { date, integer, minimum, range, withForm } from '@catalyse/forms';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement>;
-type SelectProps = SelectHTMLAttributes<HTMLSelectElement>;
+type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & { options: any[] };
 type TextareaProps = TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 const _Input: FC<InputProps> = ({
@@ -25,7 +25,7 @@ const _DateInput: FC<InputProps> = ({
   <input type="date" {...props} />
 );
 
-const _Select: FC<InputProps> = ({
+const _Select: FC<SelectProps> = ({
   options,
   ...props
 }) => (
@@ -42,7 +42,7 @@ const _Select: FC<InputProps> = ({
   </select>
 );
 
-const _Textarea: FC<InputProps> = ({
+const _Textarea: FC<TextareaProps> = ({
   ...props
 }) => (
   <textarea {...props} />
