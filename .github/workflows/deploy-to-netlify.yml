@@ -23,6 +23,7 @@ on:
       NETLIFY_SITE_ID:
         required: true
 permissions:
+  contents: read
   issues: write
   statuses: write
 jobs:
