@@ -135,9 +135,9 @@ $(target_dir)/.github/workflows/deploy.yml: $(source_dir)/.github/workflows/depl
 	mkdir -p '$(@D)'
 	sed -n '/deploy-/q;p' '$(<)' > '$(@)'
 
-$(target_dir)/plopfile.mjs: $(source_dir)/plopfile.mjs
+$(plopfile): $(source_dir)/plopfile.mjs
 	mkdir -p '$(@D)'
-	sed 's/plop-pack/plop-pack-internal/' '$(<)' > '$(@)'
+	$(cp) '$(<)' '$(@D)'
 
 $(target_dir)/%: $(source_dir)/%
 	mkdir -p '$(@D)'
