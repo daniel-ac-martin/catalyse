@@ -12,7 +12,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Anchor: Story = {
+export const Primary: Story = {
   args: {}
 };
 
