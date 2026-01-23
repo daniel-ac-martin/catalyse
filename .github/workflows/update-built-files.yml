@@ -5,6 +5,8 @@ on:
     paths-ignore:
       - '.sastscan.baseline'
       - 'pnpm-lock.yaml'
+permissions:
+  contents: write
 jobs:
   common:
     name: Build files
@@ -13,8 +15,6 @@ jobs:
 
       - name: Check out repository
         uses: actions/checkout@v6
-        with:
-          token: ${{ secrets.PAT }}
 
       - name: Setup
         uses: ./.github/actions/setup
