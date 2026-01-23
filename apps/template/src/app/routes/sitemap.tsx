@@ -1,0 +1,70 @@
+import type { Route } from "./+types/sitemap";
+import { AnchorList } from '@catalyse/anchor-list';
+import { A } from '@catalyse/components';
+import { siteTitle } from '../config';
+
+export const title = 'Sitemap';
+const description = `Overview of ${siteTitle}`;
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: `${title} - ${siteTitle}` },
+    { name: 'description', content: description },
+    { name: 'og:title', content: title },
+    { name: 'og:description', content: description },
+  ];
+}
+
+export default function Sitemap() {
+  const pages = [
+    {
+      href: "/",
+      text: "Home",
+    }, {
+      href: "/data",
+      text: "Data",
+    }, {
+      href: "/forms",
+      text: "Forms",
+    }, {
+      href: "/html",
+      text: "Html",
+    }, {
+      href: "/md",
+      text: "Md",
+    }, {
+      href: "/mdx",
+      text: "MDX",
+    }, {
+      href: "/result",
+      text: "Result",
+    }, {
+      href: "/search",
+      text: "Search",
+    }, {
+      href: "/user-info",
+      text: "User Info",
+    }
+  ];
+  const subPages = [
+    {
+      href: "/sub/one",
+      text: "One",
+    }, {
+      href: "/sub/two",
+      text: "Two",
+    }, {
+      href: "/sub/three",
+      text: "Three",
+    }
+  ];
+
+  return (
+    <>
+      <h1>{title}</h1>
+      <AnchorList items={pages} />
+      <h2>Subpages</h2>
+      <AnchorList items={subPages} />
+    </>
+  );
+}

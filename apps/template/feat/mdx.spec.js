@@ -1,0 +1,26 @@
+const pageWorks = () => (
+  it('is the correct page', () => {
+    cy.contains('MDX test').should('be.visible');
+    cy.contains('Hello world!').should('be.visible');
+    cy.contains('Blu-ray disk').should('be.visible');
+  })
+);
+
+describe('Markdown', () => {
+  describe('when visiting the page directly', () => {
+    it('successfully loads', () => {
+      cy.visitReady('/mdx');
+    });
+
+    pageWorks();
+  });
+
+  describe('when visiting the page indirectly', () => {
+    before(() => {
+      cy.visitReady('/');
+      cy.contains('MDX').click();
+    });
+
+    pageWorks();
+  });
+});
