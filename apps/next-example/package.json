@@ -1,0 +1,36 @@
+{
+  "name": "@catalyse/next-example",
+  "version": "0.0.0",
+  "description": "A Next.js application with Catalyse components.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npm run test:unit",
+    "test:ci": "npm test && npm run test:functional:ci",
+    "test:functional": "cypress run ${CYPRESS_PROJECT_ID:+--record ${CYPRESS_FLAGS}}",
+    "test:functional:ci": "start-server-and-test 'start' 'http-get://localhost:3000/' test:functional",
+    "test:unit": "jest --passWithNoTests",
+    "clean": "rm -rf dist/ .next/"
+  },
+  "dependencies": {
+    "@catalyse/router": "workspace:*",
+    "@catalyse/simple-components": "workspace:*",
+    "next": "16.1.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.9",
+    "@types/react": "19.2.8",
+    "@types/react-dom": "19.2.3",
+    "cypress": "15.9.0",
+    "jest": "30.2.0",
+    "jest-environment-jsdom": "30.2.0",
+    "sass-embedded": "1.97.2",
+    "start-server-and-test": "2.1.3",
+    "ts-jest": "29.4.6",
+    "typescript": "5.9.3"
+  }
+}
