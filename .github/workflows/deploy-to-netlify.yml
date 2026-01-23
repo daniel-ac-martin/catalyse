@@ -22,10 +22,6 @@ on:
         required: true
       NETLIFY_SITE_ID:
         required: true
-permissions:
-  contents: read
-  issues: write
-  statuses: write
 jobs:
   build-and-deploy:
     name: Build and deploy application
