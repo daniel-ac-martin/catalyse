@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { A } from '../src/Anchor';
 
 const meta = {
-  title: 'Base/Anchor',
+  title: 'Anchor',
   parameters: {},
   component: A,
   args: { href: '#', children: 'Text' }

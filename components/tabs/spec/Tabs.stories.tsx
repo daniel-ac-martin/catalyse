@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Tabs } from '../src/Tabs';
 
 const meta = {
-  title: 'Base/Tabs',
+  title: 'Tabs',
   parameters: {
     chromatic: {
       viewports: [640, 480]

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { SimpleTable } from '../src/SimpleTable';
 
 const meta = {
-  title: 'Base/SimpleTable',
+  title: 'SimpleTable',
   parameters: {},
   component: SimpleTable,
   args: {}
