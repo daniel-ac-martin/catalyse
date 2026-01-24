@@ -41,7 +41,7 @@
     "@catalyse/memoize": "workspace:^",
     "@catalyse/simple-table": "workspace:^",
     "@catalyse/tabs": "workspace:^",
-    "prettier": "^3.8.0",
+    "prettier": "^3.8.1",
     "prismjs": "^1.30.0",
     "prismjs-github": "^1.0.0",
     "react-element-to-jsx-string": "^17.0.1",
