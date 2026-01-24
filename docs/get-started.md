@@ -84,7 +84,38 @@ wish to use something else.) The others will require some work to set
 them up.
 
 
-#### 6.1. Chromatic
+#### 6.1. Publishing to NPM
+
+We provide a workflow, called 'Publish packages', for publishing your libraries
+and components to NPM.
+
+In order for this to work you must provide an access token:
+
+1. Sign up and [log in to NPM]
+2. Click your avatar on the right-hand side
+3. Click 'Access tokens'
+4. Click the 'Generate New Token' button
+5. Complete and submit the form, ensuring that you give the token write
+   permissions to your packages
+6. Take a note of the access token displayed in the green box
+7. Create a secret in GitHub called `NPM_TOKEN` with the value set to the one
+   provided to you by NPM.
+
+Once this is done, you will be able to publish using the workflow via the
+following steps:
+
+1. Go to your repository in GitHub
+2. Click the 'Actions' tab
+3. Click the 'Publish packages' workflow on the left-hand side
+4. Click the 'Run workflow' button on the right-hand side
+5. Type the new version you wish to publish, e.g. 0.1.0
+5. Click the 'Run workflow' button
+
+The workflow will then start to run, and your should follow it to ensure that it
+succeeds.
+
+
+#### 6.2. Chromatic
 
 We provide a workflow for publishing your Storybook to the [Chromatic]
 service. This allows you to detect and review any visual changes made to
@@ -183,6 +214,7 @@ mandatory prior to merging:
 [install pnpm]: https://pnpm.io/installation
 [Working on your project]: ./working-on-your-project
 [Chromatic]: https://www.chromatic.com/
+[log in to NPM]: https://www.npmjs.com/login
 [log in to Chromatic]: https://www.chromatic.com/start
 [Heroku]: https://www.heroku.com/
 [log in to Heroku]: https://id.heroku.com/login
