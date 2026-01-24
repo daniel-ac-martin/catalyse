@@ -43,27 +43,31 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <UserInfoContext.Provider value={userInfo}>
-          <AnchorList
-            items={[
-              { href: '/', text: 'Home' },
-              { href: '/get-started', text: 'Get started' },
-              { href: '/styles', text: 'Styles' },
-              { href: '/components', text: 'Components' },
-              { href: '/contributing', text: 'Contributing' }
-            ]}
-          />
-          <A href="https://github.com/daniel-ac-martin/catalyse/issues/new">Provide feedback</A>
-          <hr />
-          {children}
-          <hr />
-          <AnchorList
-            items={[
-              { href: "https://github.com/daniel-ac-martin/catalyse", text: "GitHub" },
-              { href: "/sitemap", text: "Sitemap" },
-              { href: "https://github.com/daniel-ac-martin/catalyse/issues/new", text: "Contact" },
-            ]}
-          />
-          Copyright (C) 2026 <A href="https://github.com/daniel-ac-martin">Daniel A.C. Martin</A>
+          <header>
+            <AnchorList
+              items={[
+                { href: '/', text: 'Home' },
+                { href: '/get-started', text: 'Get started' },
+                { href: '/styles', text: 'Styles' },
+                { href: '/components', text: 'Components' },
+                { href: '/contributing', text: 'Contributing' }
+              ]}
+            />
+            <A href="https://github.com/daniel-ac-martin/catalyse/issues/new">Provide feedback</A>
+          </header>
+          <div class="body">
+            {children}
+          </div>
+          <footer>
+            <AnchorList
+              items={[
+                { href: "https://github.com/daniel-ac-martin/catalyse", text: "GitHub" },
+                { href: "/sitemap", text: "Sitemap" },
+                { href: "https://github.com/daniel-ac-martin/catalyse/issues/new", text: "Contact" },
+              ]}
+            />
+            Copyright (C) 2026 <A href="https://github.com/daniel-ac-martin">Daniel A.C. Martin</A>
+          </footer>
         </UserInfoContext.Provider>
         <ScrollRestoration nonce={nonce} />
         <Scripts nonce={nonce} />

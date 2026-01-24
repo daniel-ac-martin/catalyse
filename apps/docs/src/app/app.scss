@@ -5,3 +5,19 @@
   margin-bottom: 0.4em;
   color: #555555;
 }
+
+html, body {
+  margin: 0;
+}
+
+header, footer {
+  padding: 1em;
+}
+
+header {
+  border-bottom: 1px solid;
+}
+
+footer {
+  border-top: 1px solid;
+}
