@@ -29,6 +29,6 @@
     "shelljs": "^0.10.0"
   },
   "devDependencies": {
-    "plop": "4.0.4"
+    "plop": "4.0.5"
   }
 }
