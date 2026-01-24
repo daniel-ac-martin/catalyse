@@ -10,26 +10,26 @@
 }
 
 .grid-column-one-half {
-  @extends(.grid-column);
+  @extend .grid-column;
   width: 50%;
 }
 
 .grid-column-one-third {
-  @extends(.grid-column);
+  @extend .grid-column;
   width: 33%;
 }
 
 .grid-column-two-thirds {
-  @extends(.grid-column);
+  @extend .grid-column;
   width: 67%;
 }
 
 .grid-column-one-quarter {
-  @extends(.grid-column);
+  @extend .grid-column;
   width: 25%;
 }
 
 .grid-column-three-quarters {
-  @extends(.grid-column);
+  @extend .grid-column;
   width: 75%;
 }
