@@ -84,7 +84,22 @@ wish to use something else.) The others will require some work to set
 them up.
 
 
-#### 6.1. Publishing to NPM
+#### 6.1. Automatic management of lock-file
+
+We provide a workflow for automatically managing the PNPM lock-file in CI.
+However, for this to work you must provide a GitHub Personal Access Token (PAT)
+with the required permissions. (This token is required in order to work with
+protected branches.)
+
+1. [Create a 'Fine-grained personal access token' in GitHub]
+2. Ensure that the token has access to your repository (you can limit it to just that)
+3. Add the 'Contents' permission and ensure it is set to 'Read and **write**'.
+4. Take a note of the access token displayed in the green box
+5. Create a secret in GitHub called `PAT` with the value set to the one provided
+   to you by GitHub.
+
+
+#### 6.2. Publishing to NPM
 
 We provide a workflow, called 'Publish packages', for publishing your libraries
 and components to NPM.
@@ -115,7 +130,7 @@ The workflow will then start to run, and your should follow it to ensure that it
 succeeds.
 
 
-#### 6.2. Chromatic
+#### 6.3. Chromatic
 
 We provide a workflow for publishing your Storybook to the [Chromatic]
 service. This allows you to detect and review any visual changes made to
@@ -214,6 +229,7 @@ mandatory prior to merging:
 [install pnpm]: https://pnpm.io/installation
 [Working on your project]: ./working-on-your-project
 [Chromatic]: https://www.chromatic.com/
+[Create a 'Fine-grained personal access token' in GitHub]: https://github.com/settings/personal-access-tokens/new
 [log in to NPM]: https://www.npmjs.com/login
 [log in to Chromatic]: https://www.chromatic.com/start
 [Heroku]: https://www.heroku.com/
