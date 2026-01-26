@@ -9,9 +9,9 @@ import {
   useRouteLoaderData
 } from 'react-router';
 import type { Route } from './+types/root';
-import { A, AnchorList } from '@catalyse/components';
-import { cspNonceContext, sanitiseUserInfo, userInfoContext } from '@catalyse/react-router-context';
-import { UserInfoContext } from '@catalyse/user-info';
+import { A, AnchorList } from '@react-foundry/components';
+import { cspNonceContext, sanitiseUserInfo, userInfoContext } from '@react-foundry/react-router-context';
+import { UserInfoContext } from '@react-foundry/user-info';
 import { siteTitle } from './config';
 
 import './app.scss';

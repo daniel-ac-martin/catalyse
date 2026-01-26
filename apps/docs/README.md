@@ -1,7 +1,7 @@
-Catalyse - Documentation website
-================================
+React Foundry - Documentation website
+=====================================
 
-This the source code for the Catalyse documentation website.
+This the source code for the React Foundry documentation website.
 
 ## Welcome to React Router!
 

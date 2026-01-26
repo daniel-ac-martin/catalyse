@@ -1,5 +1,5 @@
-Catalyse - Types-Helpers
-========================
+React Foundry - Types-Helpers
+=============================
 
 Types to aid in defining other types.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S -D @catalyse/types-helpers
+npm install -S -D @react-foundry/types-helpers
 ```
 
 Then use it in your code as follows:
 
 ```ts
-import type { Maybe, Promised } from '@catalyse/types-helpers';
+import type { Maybe, Promised } from '@react-foundry/types-helpers';
 
 const foo = (): Maybe<string> => {
   if (something) {

@@ -1,1 +1,1 @@
-export const siteTitle: string = 'Catalyse';
+export const siteTitle: string = 'React Foundry';

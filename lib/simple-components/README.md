@@ -1,7 +1,7 @@
-Catalyse - Simple components
-============================
+React Foundry - Simple components
+=================================
 
-Just the simple Catalyse [React] components, that will work with Next.js.
+Just the simple React Foundry [React] components, that will work with Next.js.
 (Eventually we hope to deprecate this package in favour of just using the main
 `@catlyse/components` package.)
 
@@ -12,14 +12,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/simple-components
+npm install -S @react-foundry/simple-components
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import { AnchorList } from '@catalyse/simple-components';
+import { AnchorList } from '@react-foundry/simple-components';
 
 export const MyComponent = props => (
   <AnchorList

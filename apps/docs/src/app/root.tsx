@@ -9,9 +9,9 @@ import {
   useRouteLoaderData
 } from 'react-router';
 import type { Route } from './+types/root';
-import { A, AnchorList } from '@catalyse/components';
-import { cspNonceContext, sanitiseUserInfo, userInfoContext } from '@catalyse/react-router-context';
-import { UserInfoContext } from '@catalyse/user-info';
+import { A, AnchorList } from '@react-foundry/components';
+import { cspNonceContext, sanitiseUserInfo, userInfoContext } from '@react-foundry/react-router-context';
+import { UserInfoContext } from '@react-foundry/user-info';
 import { siteTitle } from './config';
 
 import './app.scss';
@@ -53,7 +53,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 { href: '/contributing', text: 'Contributing' }
               ]}
             />
-            <A href="https://github.com/daniel-ac-martin/catalyse/issues/new">Provide feedback</A>
+            <A href="https://github.com/daniel-ac-martin/react-foundry/issues/new">Provide feedback</A>
           </header>
           <div class="body">
             {children}
@@ -61,9 +61,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <footer>
             <AnchorList
               items={[
-                { href: "https://github.com/daniel-ac-martin/catalyse", text: "GitHub" },
+                { href: "https://github.com/daniel-ac-martin/react-foundry", text: "GitHub" },
                 { href: "/sitemap", text: "Sitemap" },
-                { href: "https://github.com/daniel-ac-martin/catalyse/issues/new", text: "Contact" },
+                { href: "https://github.com/daniel-ac-martin/react-foundry/issues/new", text: "Contact" },
               ]}
             />
             Copyright (C) 2026 <A href="https://github.com/daniel-ac-martin">Daniel A.C. Martin</A>

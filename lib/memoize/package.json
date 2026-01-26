@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/memoize",
+  "name": "@react-foundry/memoize",
   "version": "0.0.0",
   "description": "Higher-order functions for memoizing pure functions.",
   "main": "src/index.ts",

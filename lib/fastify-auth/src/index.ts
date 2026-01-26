@@ -1,6 +1,6 @@
 import type { FastifyPluginCallback } from 'fastify';
 import type { RateLimitOptions, RateLimitPluginOptions } from '@fastify/rate-limit';
-import type { FastifySessionOptions } from '@catalyse/fastify-session';
+import type { FastifySessionOptions } from '@react-foundry/fastify-session';
 import type { Options as _BasicOptions } from './basic';
 import type { Options as _DummyOptions } from './dummy';
 import type { Options as _HeadersOptions } from './headers';
@@ -9,7 +9,7 @@ import type { Maybe, Reply, Request, RequestFull, Serialize, SerDes, UserProfile
 
 import fp from 'fastify-plugin';
 import fastifyRateLimit from '@fastify/rate-limit';
-import fastifySession, { SessionStore } from '@catalyse/fastify-session';
+import fastifySession, { SessionStore } from '@react-foundry/fastify-session';
 import { basic } from './basic';
 import { dummy } from './dummy';
 import { headers } from './headers';
@@ -244,4 +244,4 @@ export type {
   ReplyFull,
   RouteHandlerMethod
 } from './common';
-export { SessionStore } from '@catalyse/fastify-session';
+export { SessionStore } from '@react-foundry/fastify-session';

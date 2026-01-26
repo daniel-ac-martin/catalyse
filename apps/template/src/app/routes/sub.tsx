@@ -1,6 +1,6 @@
 import type { Route } from "./+types/sub";
 import { Outlet } from 'react-router';
-import { AnchorList } from '@catalyse/components';
+import { AnchorList } from '@react-foundry/components';
 import { siteTitle } from '../config';
 
 export const title = 'Subpages';

@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ComponentProps, ComponentType, FC } from 'react';
-import type { ControlProps } from '@catalyse/forms';
+import type { ControlProps } from '@react-foundry/forms';
 
-import { withControl } from '@catalyse/forms';
+import { withControl } from '@react-foundry/forms';
 
 type SubmitButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 

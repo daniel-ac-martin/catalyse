@@ -1,5 +1,5 @@
 import { createElement as h } from 'react';
-import { render, screen } from '@catalyse/component-test-helpers';
+import { render, screen } from '@react-foundry/component-test-helpers';
 import Anchor from '../src/Anchor';
 
 describe('Anchor', () => {

@@ -1,5 +1,5 @@
-Catalyse - Component Helpers
-============================
+React Foundry - Component Helpers
+=================================
 
 Helper functions for writing components.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/component-helpers
+npm install -S @react-foundry/component-helpers
 ```
 
 Then use it in your code as follows:
 
 ```js
-import componentHelpers from '@catalyse/component-helpers';
+import componentHelpers from '@react-foundry/component-helpers';
 
 // WRITEME
 

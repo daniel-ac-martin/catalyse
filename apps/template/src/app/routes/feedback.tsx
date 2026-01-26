@@ -1,5 +1,5 @@
 import type { Route } from "./+types/feedback";
-import { Form, required } from '@catalyse/components';
+import { Form, required } from '@react-foundry/components';
 import { siteTitle } from '../config';
 
 export const title = 'Feedback';

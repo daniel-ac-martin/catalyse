@@ -1,6 +1,6 @@
 import type { Route } from "./+types/result";
-import { A } from '@catalyse/components';
-import { useLocation } from '@catalyse/router';
+import { A } from '@react-foundry/components';
+import { useLocation } from '@react-foundry/router';
 import { siteTitle } from '../config';
 
 export const title = 'Result';

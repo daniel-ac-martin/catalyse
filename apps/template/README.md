@@ -1,5 +1,5 @@
-Catalyse - Template application
-===============================
+React Foundry - Template application
+====================================
 
 This is a test application where we can ensure that features of the framework
 are functional.

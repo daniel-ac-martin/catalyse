@@ -1,6 +1,6 @@
 import type { Route } from "./+types/styles.$id";
 import { data } from 'react-router';
-import { DocsPage } from '@catalyse/docs-components';
+import { DocsPage } from '@react-foundry/docs-components';
 import { styles as subpages } from '../stories';
 import { siteTitle } from '../config';
 

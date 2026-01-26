@@ -1,5 +1,5 @@
-Catalyse - Vite HTML React
-==========================
+React Foundry - Vite HTML React
+===============================
 
 A [Vite] plugin for importing HTML files as [React] components.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @catalyse/vite-html-react
+npm install -D @react-foundry/vite-html-react
 ```
 
 Then use it in your `vite.config.js` as follows:
 
 ```js
 import { defineConfig } from 'vite';
-import html from '@catalyse/vite-html-react';
+import html from '@react-foundry/vite-html-react';
 
 export default defineConfig({
   plugins: [

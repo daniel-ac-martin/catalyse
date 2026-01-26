@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/form",
+  "name": "@react-foundry/form",
   "version": "0.0.0",
   "description": "A component to collect information from the user.",
   "main": "src/Form.ts",
@@ -42,15 +42,15 @@
     "react-components"
   ],
   "dependencies": {
-    "@catalyse/forms": "workspace:^"
+    "@react-foundry/forms": "workspace:^"
   },
   "peerDependencies": {
-    "@catalyse/docs-components": "^0.0.0",
+    "@react-foundry/docs-components": "^0.0.0",
     "@storybook/addon-docs": "^9.1.17",
     "react": "^19.2.3"
   },
   "peerDependenciesMeta": {
-    "@catalyse/docs-components": {
+    "@react-foundry/docs-components": {
       "optional": true
     },
     "@storybook/addon-docs": {
@@ -58,7 +58,7 @@
     }
   },
   "devDependencies": {
-    "@catalyse/component-test-helpers": "workspace:*",
+    "@react-foundry/component-test-helpers": "workspace:*",
     "@types/react": "19.2.9",
     "jest": "30.2.0",
     "jest-environment-jsdom": "30.2.0",

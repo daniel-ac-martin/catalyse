@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import mdx from '@mdx-js/rollup'
-import html from '@catalyse/vite-html-react';
+import html from '@react-foundry/vite-html-react';
 import { reactRouter } from '@react-router/dev/vite';
 import { vite as csf } from '@storybook/csf-plugin';
 import reactDocgenTypescript from '@joshwooding/vite-plugin-react-docgen-typescript';
@@ -21,7 +21,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@storybook/addon-docs/blocks': '@catalyse/docs-components'
+      '@storybook/addon-docs/blocks': '@react-foundry/docs-components'
     }
   },
   ssr: {

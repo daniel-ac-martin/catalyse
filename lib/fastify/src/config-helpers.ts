@@ -1,4 +1,4 @@
-import type { Maybe } from '@catalyse/types-helpers';
+import type { Maybe } from '@react-foundry/types-helpers';
 
 export enum Mode {
   Server = 'server',

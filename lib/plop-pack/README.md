@@ -1,5 +1,5 @@
-Catalyse - Plop Pack
-====================
+React Foundry - Plop Pack
+=========================
 
 Plop pack with misc tools.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @catalyse/plop-pack
+npm install -D @react-foundry/plop-pack
 ```
 
 Then use it in your `plopfile.js` as follows:
 
 ```js
 module.exports = plop => {
-  plop.load('@catalyse/plop-pack');
+  plop.load('@react-foundry/plop-pack');
 
   // ...
 }

@@ -1,6 +1,6 @@
-import type { FastifyInstance, IsFunction, OnClose } from '@catalyse/fastify';
+import type { FastifyInstance, IsFunction, OnClose } from '@react-foundry/fastify';
 
-import { AuthMethod, Fastify, Mode, SessionStore } from '@catalyse/fastify';
+import { AuthMethod, Fastify, Mode, SessionStore } from '@react-foundry/fastify';
 import config from './config';
 
 type Server = FastifyInstance;

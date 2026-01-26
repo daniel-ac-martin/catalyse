@@ -1,5 +1,5 @@
-Catalyse - Fastify Harden
-=========================
+React Foundry - Fastify Harden
+==============================
 
 Fastify plugin for extra cyber-security hardening.
 
@@ -15,14 +15,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/fastify-harden
+npm install -S @react-foundry/fastify-harden
 ```
 
 Then use it in your code as follows:
 
 ```js
 import Fastify from 'fastify';
-import fastifyHarden from '@catalyse/fastify-harden';
+import fastifyHarden from '@react-foundry/fastify-harden';
 
 const httpd = Fastify({});
 

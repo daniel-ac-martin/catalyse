@@ -1,5 +1,5 @@
-Catalyse - Fastify-Auth
-=======================
+React Foundry - Fastify-Auth
+============================
 
 Authentication plugin for Fastify. Allows you to authenticate uses by a variety
 of methods and obtain identity information and roles for use on each request.
@@ -13,14 +13,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/fastify-auth
+npm install -S @react-foundry/fastify-auth
 ```
 
 Then use it in your code as follows:
 
 ```ts
 import Fastify from 'fastify';
-import { AuthMethod, fastifyAuth } from '@catalyse/fastify-auth';
+import { AuthMethod, fastifyAuth } from '@react-foundry/fastify-auth';
 
 const httpd = Fastify();
 
@@ -74,7 +74,7 @@ Options object:
   all features when those features require certain roles. Users can typically
   choose to log-in to acquire extra permissions.
 - **`session: object`**
-  See: https://www.npmjs.com/package/@catalyse/fastify-session
+  See: https://www.npmjs.com/package/@react-foundry/fastify-session
 
 
 ### `req.user: object`

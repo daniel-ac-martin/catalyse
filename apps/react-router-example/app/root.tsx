@@ -7,7 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import { A, AnchorList } from '@catalyse/components';
+import { A, AnchorList } from '@react-foundry/components';
 
 import type { Route } from "./+types/root";
 import "./app.scss";

@@ -1,5 +1,5 @@
-Catalyse - URI
-==============
+React Foundry - URI
+===================
 
 A more forgiving alternative to JavaScript's standard URL class.
 Supports nested structures in the query-strings.
@@ -11,13 +11,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/uri
+npm install -S @react-foundry/uri
 ```
 
 Then use it in your code as follows:
 
 ```js
-import { URI } from '@catalyse/uri';
+import { URI } from '@react-foundry/uri';
 
 // WRITEME
 

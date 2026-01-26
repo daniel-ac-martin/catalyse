@@ -1,7 +1,7 @@
 {
-  "name": "@catalyse/components",
+  "name": "@react-foundry/components",
   "version": "0.0.0",
-  "description": "React components to support the Catalyse system.",
+  "description": "React components to support the React Foundry system.",
   "main": "src/index.ts",
   "sass": "assets/index.scss",
   "exports": {
@@ -42,8 +42,8 @@
     "react-components"
   ],
   "dependencies": {
-    "@catalyse/form": "workspace:^",
-    "@catalyse/simple-components": "workspace:^"
+    "@react-foundry/form": "workspace:^",
+    "@react-foundry/simple-components": "workspace:^"
   },
   "devDependencies": {
     "jest": "30.2.0",

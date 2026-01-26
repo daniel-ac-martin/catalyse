@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   },
   turbopack: {
     resolveAlias: {
-      '@catalyse/router': '@catalyse/router/next', // ADD THIS LINE
+      '@react-foundry/router': '@react-foundry/router/next', // ADD THIS LINE
     }
   }
 };

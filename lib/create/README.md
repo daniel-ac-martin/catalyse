@@ -1,5 +1,5 @@
-Catalyse - Create
-=================
+React Foundry - Create
+======================
 
 A project and prototype initialiser.
 
@@ -22,7 +22,7 @@ git remote add origin https://github.com/MY-USER/MY-PROJECT.git
 Once that is set up you can run:
 
 ```shell
-npm init @catalyse
+npm init @react-foundry
 ```
 
 Follow the prompts to set up your new project.

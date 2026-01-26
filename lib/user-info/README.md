@@ -1,5 +1,5 @@
-Catalyse - User Info
-====================
+React Foundry - User Info
+=========================
 
 A React context (with hook) for providing information on the user.
 
@@ -20,14 +20,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/user-info
+npm install -S @react-foundry/user-info
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import { UserInfoContext, useUserInfo } from '@catalyse/user-info';
+import { UserInfoContext, useUserInfo } from '@react-foundry/user-info';
 
 const dummyUserInfo = {
   username: 'DummyUser',

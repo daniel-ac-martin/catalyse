@@ -1,5 +1,5 @@
 import type { FastifyInstance } from 'fastify';
-import type { Request as _Request, RequestFull as _RequestFull, Reply, ReplyFull } from '@catalyse/fastify-session';
+import type { Request as _Request, RequestFull as _RequestFull, Reply, ReplyFull } from '@react-foundry/fastify-session';
 
 export type Promised<T> = T | Promise<T>;
 export type Maybe<T> = T | undefined;

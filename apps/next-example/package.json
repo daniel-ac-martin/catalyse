@@ -1,7 +1,7 @@
 {
-  "name": "@catalyse/next-example",
+  "name": "@react-foundry/next-example",
   "version": "0.0.0",
-  "description": "A Next.js application with Catalyse components.",
+  "description": "A Next.js application with React Foundry components.",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,8 +15,8 @@
     "clean": "rm -rf dist/ .next/"
   },
   "dependencies": {
-    "@catalyse/router": "workspace:*",
-    "@catalyse/simple-components": "workspace:*",
+    "@react-foundry/router": "workspace:*",
+    "@react-foundry/simple-components": "workspace:*",
     "next": "16.1.4",
     "react": "19.2.3",
     "react-dom": "19.2.3"

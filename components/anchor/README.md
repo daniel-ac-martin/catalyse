@@ -1,5 +1,5 @@
-Catalyse - Anchor
-=================
+React Foundry - Anchor
+======================
 
 A drop in replacement for the HTML `<a>` tag that works with [React Router].
 
@@ -16,14 +16,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/anchor
+npm install -S @react-foundry/anchor
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import { A } from '@catalyse/anchor';
+import { A } from '@react-foundry/anchor';
 
 export const MyComponent = props => (
   <A href="#">My link</A>

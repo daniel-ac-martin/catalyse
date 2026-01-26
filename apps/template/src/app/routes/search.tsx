@@ -1,6 +1,6 @@
 import type { Route } from "./+types/search";
-import { Form } from '@catalyse/components';
-import { useLocation } from '@catalyse/router';
+import { Form } from '@react-foundry/components';
+import { useLocation } from '@react-foundry/router';
 import { siteTitle } from '../config';
 
 export const title = 'Search';

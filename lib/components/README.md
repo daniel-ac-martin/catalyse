@@ -1,7 +1,7 @@
-Catalyse - Components
-=====================
+React Foundry - Components
+==========================
 
-All of the Catalyse [React] components, in a single package.
+All of the React Foundry [React] components, in a single package.
 
 
 Using this package
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/components
+npm install -S @react-foundry/components
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import { AnchorList } from '@catalyse/components';
+import { AnchorList } from '@react-foundry/components';
 
 export const MyComponent = props => (
   <AnchorList

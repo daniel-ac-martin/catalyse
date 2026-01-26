@@ -1,7 +1,7 @@
 {
-  "name": "@catalyse/simple-components",
+  "name": "@react-foundry/simple-components",
   "version": "0.0.0",
-  "description": "Simple Catalyse components.",
+  "description": "Simple React Foundry components.",
   "main": "src/index.ts",
   "sass": "assets/index.scss",
   "exports": {
@@ -42,10 +42,10 @@
     "react-components"
   ],
   "dependencies": {
-    "@catalyse/anchor": "workspace:^",
-    "@catalyse/anchor-list": "workspace:^",
-    "@catalyse/simple-table": "workspace:^",
-    "@catalyse/tabs": "workspace:^"
+    "@react-foundry/anchor": "workspace:^",
+    "@react-foundry/anchor-list": "workspace:^",
+    "@react-foundry/simple-table": "workspace:^",
+    "@react-foundry/tabs": "workspace:^"
   },
   "devDependencies": {
     "jest": "30.2.0",

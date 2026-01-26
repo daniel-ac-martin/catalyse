@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/component-helpers",
+  "name": "@react-foundry/component-helpers",
   "version": "0.0.0",
   "description": "Helper functions for writing components.",
   "main": "src/index.ts",

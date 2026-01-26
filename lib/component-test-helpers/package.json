@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/component-test-helpers",
+  "name": "@react-foundry/component-test-helpers",
   "version": "0.0.0",
   "description": "Helper functions for testing React components.",
   "main": "src/index.ts",

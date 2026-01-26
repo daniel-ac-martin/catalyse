@@ -4,8 +4,8 @@ import type { Application } from 'serverless-http';
 
 import { join } from 'node:path';
 import serverless from 'serverless-http';
-import { Mode } from '@catalyse/fastify';
-import fastifyReactRouter from '@catalyse/fastify-react-router';
+import { Mode } from '@react-foundry/fastify';
+import fastifyReactRouter from '@react-foundry/fastify-react-router';
 import { createServer, reactRouterOptions } from './httpd';
 import config from './config';
 import * as serverBuild from '../../dist/app/server/index.js';

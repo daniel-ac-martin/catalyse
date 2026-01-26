@@ -1,5 +1,5 @@
-Catalyse - Docs Components
-==========================
+React Foundry - Docs Components
+===============================
 
 React components for use in documentation.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/docs-components
+npm install -S @react-foundry/docs-components
 ```
 
 Then use it in your code as follows:
 
 ```js
-import docsComponents from '@catalyse/docs-components';
+import docsComponents from '@react-foundry/docs-components';
 
 // WRITEME
 

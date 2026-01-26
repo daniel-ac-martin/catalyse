@@ -1,5 +1,5 @@
-Catalyse - Router
-=================
+React Foundry - Router
+======================
 
 An abstraction layer over the routers from react-router and Next.js.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/router
+npm install -S @react-foundry/router
 ```
 
 Then use it in your code as follows:
 
 ```js
-import router from '@catalyse/router';
+import router from '@react-foundry/router';
 
 // WRITEME
 
