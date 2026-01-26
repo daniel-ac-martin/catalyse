@@ -19,6 +19,7 @@ runs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+        npm whoami
 
     - name: Publish
       shell: bash
@@ -26,6 +27,7 @@ runs:
         VERSION: ${{ inputs.version }}
       run: |
         npm version "${VERSION}"
+        npm whoami
         npm run all:publish
         git push
         git push --tags
