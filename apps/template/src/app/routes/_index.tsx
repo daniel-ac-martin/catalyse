@@ -1,7 +1,7 @@
 import type { Route } from "./+types/_index";
 import {
   A
-} from '@catalyse/components';
+} from '@react-foundry/components';
 import { siteTitle } from '../config';
 
 export const title = 'Home';
@@ -19,8 +19,8 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <h1>This is Catalyse!</h1>
-      <p>Welcome to Catalyse.</p>
+      <h1>This is React Foundry!</h1>
+      <p>Welcome to React Foundry.</p>
       <A href="/forms">Start</A>
     </>
   );

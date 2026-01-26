@@ -1,6 +1,6 @@
 import { ComponentType, FC, createElement as h } from 'react';
 import { extractComponentProps } from 'storybook/internal/docs-tools';
-import { SimpleTable } from '@catalyse/simple-table';
+import { SimpleTable } from '@react-foundry/simple-table';
 import { useDocs } from './context';
 
 import type { Controls as _Controls } from '@storybook/addon-docs/blocks';

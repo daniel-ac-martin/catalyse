@@ -1,7 +1,7 @@
 {
-  "name": "@catalyse/react-router-example",
+  "name": "@react-foundry/react-router-example",
   "version": "0.0.0",
-  "description": "A React Router Framework application with Catalyse components.",
+  "description": "A React Router Framework application with React Foundry components.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,7 +20,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "dependencies": {
-    "@catalyse/components": "workspace:*",
+    "@react-foundry/components": "workspace:*",
     "@react-router/fs-routes": "7.13.0",
     "@react-router/node": "7.13.0",
     "@react-router/serve": "7.13.0",

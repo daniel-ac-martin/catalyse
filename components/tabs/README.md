@@ -1,5 +1,5 @@
-Catalyse - Tabs
-===============
+React Foundry - Tabs
+====================
 
 A component for multiple, related sections of content.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/tabs
+npm install -S @react-foundry/tabs
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import Tabs from '@catalyse/tabs';
+import Tabs from '@react-foundry/tabs';
 
 export const MyComponent = props => (
   <Tabs

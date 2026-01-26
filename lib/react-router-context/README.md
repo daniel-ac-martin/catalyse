@@ -1,7 +1,7 @@
-Catalyse - React-Router-Context
-===============================
+React Foundry - React-Router-Context
+====================================
 
-A collection of React Router contexts for use in Catalyse applications.
+A collection of React Router contexts for use in React Foundry applications.
 
 
 Using this package
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/react-router-context
+npm install -S @react-foundry/react-router-context
 ```
 
 Then use it in your code as follows:
 
 ```js
-import type { RouterContextProvider } from '@catalyse/react-router-context'; // Replaces import from react-router
-import { userInfoContext, cspNonceContext } from '@catalyse/react-router-context';
+import type { RouterContextProvider } from '@react-foundry/react-router-context'; // Replaces import from react-router
+import { userInfoContext, cspNonceContext } from '@react-foundry/react-router-context';
 
 export const loader = async ({ context: _context }: Route.LoaderArgs) => {
   const context = _context as RouterContextProvider; // Needed to get extra properties recognised

@@ -7,13 +7,13 @@ import type { Route } from "./+types/{{{name}}}";
 import { data } from 'react-router';
 {{/if}}
 {{#if query}}
-import { useLocation } from '@catalyse/router';
+import { useLocation } from '@react-foundry/router';
 {{/if}}
 {{#if userinfo}}
 {{#if data}}
-import { userInfoContext } from '@catalyse/react-router-context';
+import { userInfoContext } from '@react-foundry/react-router-context';
 {{/if}}
-import { useUserInfo } from '@catalyse/user-info';
+import { useUserInfo } from '@react-foundry/user-info';
 {{/if}}
 import { siteTitle } from '../config';
 

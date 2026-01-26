@@ -1,5 +1,5 @@
-Catalyse - Simple Table
-=======================
+React Foundry - Simple Table
+============================
 
 A simple table for displaying data.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/simple-table
+npm install -S @react-foundry/simple-table
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import SimpleTable from '@catalyse/simple-table';
+import SimpleTable from '@react-foundry/simple-table';
 
 export const MyComponent = props => (
   <SimpleTable

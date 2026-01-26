@@ -1,5 +1,5 @@
-import { Mode } from '@catalyse/fastify';
-import fastifyReactRouterDev from '@catalyse/fastify-react-router/dev';
+import { Mode } from '@react-foundry/fastify';
+import fastifyReactRouterDev from '@react-foundry/fastify-react-router/dev';
 import { createServer, reactRouterOptions } from './httpd';
 import config from './config';
 

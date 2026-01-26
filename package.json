@@ -1,5 +1,5 @@
 {
-  "name": "catalyse",
+  "name": "react-foundry",
   "version": "0.0.0",
   "description": "A framework for quickly building digital services for government.",
   "bin": "lib/create/bin/create",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daniel-ac-martin/catalyse.git"
+    "url": "git+https://github.com/daniel-ac-martin/react-foundry.git"
   },
   "keywords": [
     "react-components"
@@ -45,12 +45,12 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daniel-ac-martin/catalyse/issues"
+    "url": "https://github.com/daniel-ac-martin/react-foundry/issues"
   },
-  "homepage": "https://github.com/daniel-ac-martin/catalyse#readme",
+  "homepage": "https://github.com/daniel-ac-martin/react-foundry#readme",
   "dependencies": {
-    "@catalyse/docs-components": "workspace:*",
-    "@catalyse/user-info": "workspace:*",
+    "@react-foundry/docs-components": "workspace:*",
+    "@react-foundry/user-info": "workspace:*",
     "@storybook/addon-docs": "9.1.17",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -62,7 +62,7 @@
     "@babel/preset-env": "7.28.6",
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
-    "@catalyse/plop-pack": "workspace:*",
+    "@react-foundry/plop-pack": "workspace:*",
     "@types/jest": "30.0.0",
     "@types/react": "19.2.9",
     "babel-jest": "30.2.0",

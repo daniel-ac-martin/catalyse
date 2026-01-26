@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/fastify-harden",
+  "name": "@react-foundry/fastify-harden",
   "version": "0.0.0",
   "description": "Fastify plugin for extra cyber-security hardening.",
   "main": "src/index.ts",

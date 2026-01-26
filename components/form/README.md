@@ -1,5 +1,5 @@
-Catalyse - Form
-===============
+React Foundry - Form
+====================
 
 A component to collect information from the user.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/form
+npm install -S @react-foundry/form
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import Form from '@catalyse/form';
+import Form from '@react-foundry/form';
 
 export const MyComponent = props => (
   <Form action="/result" method="get">

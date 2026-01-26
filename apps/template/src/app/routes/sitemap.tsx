@@ -1,6 +1,6 @@
 import type { Route } from "./+types/sitemap";
-import { AnchorList } from '@catalyse/anchor-list';
-import { A } from '@catalyse/components';
+import { AnchorList } from '@react-foundry/anchor-list';
+import { A } from '@react-foundry/components';
 import { siteTitle } from '../config';
 
 export const title = 'Sitemap';

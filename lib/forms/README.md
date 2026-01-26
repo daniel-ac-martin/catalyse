@@ -1,5 +1,5 @@
-Catalyse - Forms
-================
+React Foundry - Forms
+=====================
 
 An intuitive isometric forms framework for React.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/forms
+npm install -S @react-foundry/forms
 ```
 
 Then use it in your code as follows:
 
 ```js
-import forms from '@catalyse/forms';
+import forms from '@react-foundry/forms';
 
 // WRITEME
 

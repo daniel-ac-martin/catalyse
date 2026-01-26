@@ -1,7 +1,7 @@
 import type { Route } from "./+types/styles";
 import { Outlet, redirect } from 'react-router';
-import { AnchorList } from '@catalyse/components';
-import { DocsPage } from '@catalyse/docs-components';
+import { AnchorList } from '@react-foundry/components';
+import { DocsPage } from '@react-foundry/docs-components';
 import { styleLinks } from '../stories';
 import { siteTitle } from '../config';
 

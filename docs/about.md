@@ -1,7 +1,7 @@
-About Catalyse
-==============
+About React Foundry
+===================
 
-[Catalyse] is a collection of tools and libraries for building [React]
+[React Foundry] is a collection of tools and libraries for building [React]
 applications, projects, and design systems. It aims to enable you to:
 1. quickly prototype services
 2. quickly develop multiple, secure, accessible applications
@@ -10,7 +10,7 @@ applications, projects, and design systems. It aims to enable you to:
 5. quickly set-up Continuous Integration (CI)
 6. work to common standards
 
-Catalyse aims to provide a 'batteries-included' framework for building React
+React Foundry aims to provide a 'batteries-included' framework for building React
 projects and, as such, is highly opinionated. Specifically, we use:
 - [React Router] as our isomorphic application framework
 - [Fastify] as our server framework
@@ -43,7 +43,7 @@ Features
 **See:** [Getting started]
 
 
-[Catalyse]: https://github.com/daniel-ac-martin/catalyse
+[React Foundry]: https://github.com/daniel-ac-martin/react-foundry
 [React]: https://reactjs.org/
 [React Router]: https://reactrouter.com/
 [Fastify]: https://fastify.dev/

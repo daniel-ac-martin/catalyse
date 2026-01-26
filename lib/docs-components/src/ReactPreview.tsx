@@ -7,9 +7,9 @@ import parserHtml from 'prettier/plugins/html';
 import parserBabel from 'prettier/plugins/babel';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import Prism from 'prismjs';
-import { StandardProps, classBuilder } from '@catalyse/component-helpers';
-import { memoize } from '@catalyse/memoize';
-import { Tabs } from '@catalyse/tabs';
+import { StandardProps, classBuilder } from '@react-foundry/component-helpers';
+import { memoize } from '@react-foundry/memoize';
+import { Tabs } from '@react-foundry/tabs';
 
 import 'prismjs/components/prism-jsx.min';
 

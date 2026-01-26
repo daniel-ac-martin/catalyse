@@ -1,5 +1,5 @@
-Catalyse - Fastify
-==================
+React Foundry - Fastify
+=======================
 
 A customised Fastify server for running websites.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/fastify
+npm install -S @react-foundry/fastify
 ```
 
 Then use it in your code as follows:
 
 ```js
-import Fastify from '@catalyse/fastify';
+import Fastify from '@react-foundry/fastify';
 
 const httpd = Fastify({});
 

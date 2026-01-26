@@ -1,4 +1,4 @@
-import type { Maybe, UserInfo } from '@catalyse/types';
+import type { Maybe, UserInfo } from '@react-foundry/types';
 
 import { Context, createContext, useContext } from 'react';
 

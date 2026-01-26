@@ -1,5 +1,5 @@
 import type { UseLocation } from './common';
-import { URI } from '@catalyse/uri';
+import { URI } from '@react-foundry/uri';
 
 const includes = (haystack: object, needle: object): boolean => {
   const subIncludes = (haystack: any, needle: any): boolean => (

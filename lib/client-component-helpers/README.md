@@ -1,5 +1,5 @@
-Catalyse - Client Component Helpers
-===================================
+React Foundry - Client Component Helpers
+========================================
 
 Helper functions for writing client components.
 
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/client-component-helpers
+npm install -S @react-foundry/client-component-helpers
 ```
 
 Then use it in your code as follows:
 
 ```js
-import clientComponentHelpers from '@catalyse/client-component-helpers';
+import clientComponentHelpers from '@react-foundry/client-component-helpers';
 
 // WRITEME
 

@@ -1,5 +1,5 @@
-Catalyse - Fastify Consent-Cookies
-==================================
+React Foundry - Fastify Consent-Cookies
+=======================================
 
 Fastify plugin to parse and set cookies only with user consent. This
 aids compliance with European regulations.
@@ -23,14 +23,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/fastify-consent-cookies
+npm install -S @react-foundry/fastify-consent-cookies
 ```
 
 Then use it in your code as follows:
 
 ```ts
 import Fastify from 'fastify';
-import { type Cookie, type FastifyConsentCookiesOptions, fastifyConsentCookies } from '@catalyse/fastify-consent-cookies';
+import { type Cookie, type FastifyConsentCookiesOptions, fastifyConsentCookies } from '@react-foundry/fastify-consent-cookies';
 
 const myCookies = [
   {

@@ -1,7 +1,7 @@
 import type { Route } from "./+types/data";
 import { data } from 'react-router';
-import { userInfoContext } from '@catalyse/react-router-context';
-import { AnchorList } from '@catalyse/components';
+import { userInfoContext } from '@react-foundry/react-router-context';
+import { AnchorList } from '@react-foundry/components';
 import { siteTitle } from '../config';
 
 type Book = {

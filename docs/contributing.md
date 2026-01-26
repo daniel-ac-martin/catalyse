@@ -1,5 +1,5 @@
-Working on and contributing to Catalyse
-=======================================
+Working on and contributing to React Foundry
+============================================
 
 
 Contributing
@@ -89,11 +89,11 @@ npm run create:component
 See also: [Working on your project]
 
 
-[Pull requests]: https://github.com/daniel-ac-martin/catalyse/pulls
-[open an issue]: https://github.com/daniel-ac-martin/catalyse/issues/new
-[pull request]: https://github.com/daniel-ac-martin/catalyse/pulls
-[issue]: https://github.com/daniel-ac-martin/catalyse/issues
-[get in touch]: https://github.com/daniel-ac-martin/catalyse/issues/new
+[Pull requests]: https://github.com/daniel-ac-martin/react-foundry/pulls
+[open an issue]: https://github.com/daniel-ac-martin/react-foundry/issues/new
+[pull request]: https://github.com/daniel-ac-martin/react-foundry/pulls
+[issue]: https://github.com/daniel-ac-martin/react-foundry/issues
+[get in touch]: https://github.com/daniel-ac-martin/react-foundry/issues/new
 [pnpm]: https://pnpm.io/installation
 [Storybook]: https://storybook.js.org/
 [Working on your project]: ./working-on-your-project

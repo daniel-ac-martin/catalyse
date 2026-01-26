@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/app-plop-pack",
+  "name": "@react-foundry/app-plop-pack",
   "version": "0.0.0",
   "description": "Generators for use within applications and prototypes.",
   "type": "module",
@@ -25,6 +25,6 @@
     "plop": "4.0.5"
   },
   "dependencies": {
-    "@catalyse/plop-pack": "workspace:^"
+    "@react-foundry/plop-pack": "workspace:^"
   }
 }

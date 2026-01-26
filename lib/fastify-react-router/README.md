@@ -1,5 +1,5 @@
-Catalyse - Fastify-React-Router
-===============================
+React Foundry - Fastify-React-Router
+====================================
 
 Fastify plugin for React Router.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/fastify-react-router
+npm install -S @react-foundry/fastify-react-router
 ```
 
 Then use it in your code as follows:
 
 ```js
-import Fastify from '@catalyse/fastify';
-import fastifyReactRouter from '@catalyse/fastify-react-router';
+import Fastify from '@react-foundry/fastify';
+import fastifyReactRouter from '@react-foundry/fastify-react-router';
 
 const httpd = Fastify({});
 
@@ -38,8 +38,8 @@ It is expected that you will have built the referenced files with
 You can use the `/dev` entrypoint for a dev server.
 
 ```js
-import Fastify from '@catalyse/fastify';
-import fastifyReactRouterDev from '@catalyse/fastify-react-router/dev';
+import Fastify from '@react-foundry/fastify';
+import fastifyReactRouterDev from '@react-foundry/fastify-react-router/dev';
 
 const httpd = Fastify({});
 

@@ -23,4 +23,4 @@ export type FullUserInfo = ServersideUserInfo & {
   refreshToken?: string
 };
 
-export * from '@catalyse/types-helpers';
+export * from '@react-foundry/types-helpers';

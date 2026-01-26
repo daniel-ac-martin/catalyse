@@ -1,7 +1,7 @@
 import type { ComponentType, FC, InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes, } from 'react';
-import type { FieldProps } from '@catalyse/forms';
+import type { FieldProps } from '@react-foundry/forms';
 
-import { date, integer, minimum, range, withForm } from '@catalyse/forms';
+import { date, integer, minimum, range, withForm } from '@react-foundry/forms';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement>;
 type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & { options: any[] };

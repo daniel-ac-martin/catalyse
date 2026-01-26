@@ -1,5 +1,5 @@
-Catalyse - Anchor List
-======================
+React Foundry - Anchor List
+===========================
 
 A list of anchors. Items that contain links to the current page are
 marked as active. Useful for navigation menus.
@@ -11,14 +11,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/anchor-list
+npm install -S @react-foundry/anchor-list
 ```
 
 Then use it in your code as follows:
 
 ```js
 import React, { createElement as h } from 'react';
-import AnchorList from '@catalyse/anchor-list';
+import AnchorList from '@react-foundry/anchor-list';
 
 export const MyComponent = props => (
   <AnchorList items={[

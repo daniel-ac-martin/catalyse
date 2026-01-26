@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { A, AnchorList } from '@catalyse/simple-components';
+import { A, AnchorList } from '@react-foundry/simple-components';
 import { AddBodyClass } from '../components/AddBodyClass';
 
 

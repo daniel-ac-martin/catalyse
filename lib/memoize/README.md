@@ -1,5 +1,5 @@
-Catalyse - Memoize
-==================
+React Foundry - Memoize
+=======================
 
 Higher-order functions for memoizing pure functions.
 
@@ -17,13 +17,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S @catalyse/memoize
+npm install -S @react-foundry/memoize
 ```
 
 Then use it in your code as follows:
 
 ```js
-import memoize from '@catalyse/memoize';
+import memoize from '@react-foundry/memoize';
 
 const myPureFunction = str => str.length;
 

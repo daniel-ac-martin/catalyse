@@ -1,5 +1,5 @@
-Catalyse - Application plop-pack
-================================
+React Foundry - Application plop-pack
+=====================================
 
 Generators for use within applications and prototypes.
 
@@ -10,14 +10,14 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -D @catalyse/app-plop-pack
+npm install -D @react-foundry/app-plop-pack
 ```
 
 Then use it in your `plopfile.js` as follows:
 
 ```js
 module.exports = plop => {
-  plop.load('@catalyse/app-plop-pack');
+  plop.load('@react-foundry/app-plop-pack');
 
   // ...
 }

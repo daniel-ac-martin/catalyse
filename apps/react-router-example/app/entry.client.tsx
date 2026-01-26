@@ -9,7 +9,7 @@ startTransition(() => {
       <HydratedRouter />
     </StrictMode>,
     {
-      // Required because <Links /> is causing a hydration mismatch; I'm not sure why but it seems unrelated to Catalyse
+      // Required because <Links /> is causing a hydration mismatch; I'm not sure why but it seems unrelated to React Foundry
       onRecoverableError: (error, errorInfo) => {
         console.warn(error, 'Component Stack:', errorInfo.componentStack);
       }

@@ -4,6 +4,6 @@ describe('The home page', () => {
   });
 
   it('is the correct page', () => {
-    cy.contains('This is Catalyse!');
+    cy.contains('This is React Foundry!');
   });
 });

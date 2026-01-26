@@ -1,6 +1,6 @@
 import type { Route } from "./+types/components";
 import { Outlet, redirect } from 'react-router';
-import { AnchorList } from '@catalyse/components';
+import { AnchorList } from '@react-foundry/components';
 import { componentLinks } from '../stories';
 import { siteTitle } from '../config';
 

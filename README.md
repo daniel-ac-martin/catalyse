@@ -1,5 +1,5 @@
-Catalyse
-========
+React Foundry
+=============
 
 A collection of tools and libraries for building [React] applications, projects,
 and design systems. It aims to enable you to:
@@ -10,7 +10,7 @@ and design systems. It aims to enable you to:
 5. quickly set-up Continuous Integration (CI)
 6. work to common standards
 
-Catalyse aims to provide a 'batteries-included' framework for building React
+React Foundry aims to provide a 'batteries-included' framework for building React
 projects and, as such, is highly opinionated. Specifically, we use:
 - [React Router] as our isomorphic application framework
 - [Fastify] as our server framework
@@ -40,7 +40,7 @@ Features
 - JSON logs in production, human-readable logs in development
 - A framework for building advanced non-linear form journeys for collecting information from users. (UNFINISHED)
 
-**See:** [About Catalyse]
+**See:** [About React Foundry]
 
 
 Getting started
@@ -52,7 +52,7 @@ Getting started
 Working on this repository
 --------------------------
 
-**See:** [Working on and contributing to Catalyse]
+**See:** [Working on and contributing to React Foundry]
 
 
 Navigating this repository
@@ -86,7 +86,7 @@ clear please do let me know by raising an [issue] or a [pull request].
 If you run into any problems or have any questions, please do [get in touch].
 
 
-[Catalyse]: https://github.com/daniel-ac-martin/catalyse
+[React Foundry]: https://github.com/daniel-ac-martin/react-foundry
 [React]: https://reactjs.org/
 [React Router]: https://reactrouter.com/
 [Fastify]: https://fastify.dev/
@@ -99,8 +99,8 @@ If you run into any problems or have any questions, please do [get in touch].
 [Basic Auth]: https://en.wikipedia.org/wiki/Basic_access_authentication
 [OpenID Connect]: https://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)
 [Getting started]: ./docs/get-started.md
-[About Catalyse]: ./docs/about.md
-[Working on and contributing to Catalyse]: ./docs/contributing.md
+[About React Foundry]: ./docs/about.md
+[Working on and contributing to React Foundry]: ./docs/contributing.md
 [Pull requests]: ./pulls
 [open an issue]: ./issues/new
 [pull request]: ./pulls

@@ -1,7 +1,7 @@
 {
-  "name": "@catalyse/storybook",
+  "name": "@react-foundry/storybook",
   "version": "0.0.0",
-  "description": "Storybook for Catalyse.",
+  "description": "Storybook for React Foundry.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "dependencies": {
-    "@catalyse/components": "workspace:*",
+    "@react-foundry/components": "workspace:*",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "serve": "14.2.5"

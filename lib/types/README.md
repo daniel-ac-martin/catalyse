@@ -1,7 +1,7 @@
-Catalyse - Types
-================
+React Foundry - Types
+=====================
 
-Common types used across Catalyse.
+Common types used across React Foundry.
 
 
 Using this package
@@ -10,13 +10,13 @@ Using this package
 First install the package into your project:
 
 ```shell
-npm install -S -D @catalyse/types
+npm install -S -D @react-foundry/types
 ```
 
 Then use it in your code as follows:
 
 ```js
-import type { UserInfo } from '@catalyse/types';
+import type { UserInfo } from '@react-foundry/types';
 ```
 
 

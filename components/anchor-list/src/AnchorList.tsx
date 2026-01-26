@@ -1,9 +1,9 @@
 'use client';
 
 import { ComponentType, FC, HTMLProps, Suspense, createElement as h } from 'react';
-import { AnchorProps, A } from '@catalyse/anchor';
-import { StandardProps, classBuilder } from '@catalyse/component-helpers';
-import { needSuspense, useIsActive } from '@catalyse/router';
+import { AnchorProps, A } from '@react-foundry/anchor';
+import { StandardProps, classBuilder } from '@react-foundry/component-helpers';
+import { needSuspense, useIsActive } from '@react-foundry/router';
 
 import '../assets/AnchorList.scss';
 

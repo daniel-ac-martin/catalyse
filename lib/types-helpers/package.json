@@ -1,5 +1,5 @@
 {
-  "name": "@catalyse/types-helpers",
+  "name": "@react-foundry/types-helpers",
   "version": "0.0.0",
   "description": "Types to aid in defining other types.",
   "main": "src/index.ts",

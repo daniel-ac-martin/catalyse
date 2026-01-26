@@ -1,5 +1,5 @@
 import { ComponentType, FC, createElement as h } from 'react';
-import { StandardProps, classBuilder } from '@catalyse/component-helpers';
+import { StandardProps, classBuilder } from '@react-foundry/component-helpers';
 import { DocsContext } from './context';
 
 export type StoriesModule = Record<string, unknown> & {

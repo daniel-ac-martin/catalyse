@@ -8,7 +8,7 @@ import WTForm, {
   alphanumeric as localAlphanumeric,
   mobileNumber as localMobileNumber,
   postalCode as localPostalCode
-} from '@catalyse/forms';
+} from '@react-foundry/forms';
 import { Submit } from './controls';
 import {
   Checkboxes,
@@ -38,7 +38,7 @@ type TForm = ComponentType<FormProps> & {
 
 export const FormComponent: FC<FormProps> = ({ classBlock, ...props }) => h(WTForm, {
   ...props,
-  classBlock: classBlock || 'catalyse-form'
+  classBlock: classBlock || 'react-foundry-form'
 });
 
 export const Form: TForm = Object.assign(
@@ -81,5 +81,5 @@ export {
   withControl,
   withForm,
   withField
-} from '@catalyse/forms';
-export type { RawField } from '@catalyse/forms';
+} from '@react-foundry/forms';
+export type { RawField } from '@react-foundry/forms';

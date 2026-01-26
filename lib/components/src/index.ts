@@ -1,2 +1,2 @@
-export * from '@catalyse/simple-components';
-export * from '@catalyse/form';
+export * from '@react-foundry/simple-components';
+export * from '@react-foundry/form';
