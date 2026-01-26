@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/types",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Common types used across React Foundry.",
   "main": "src/index.ts",
   "exports": {

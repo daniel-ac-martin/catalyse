@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/types-helpers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Types to aid in defining other types.",
   "main": "src/index.ts",
   "exports": {
@@ -33,7 +33,7 @@
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",
   "license": "MIT",
   "engines": {
-    "node" : ">=18.0.0"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "jest": "30.2.0",
