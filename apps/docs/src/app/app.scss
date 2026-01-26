@@ -1,17 +1,79 @@
 @use "@catalyse/components";
 
-.caption-xl {
+$light: #ffffff;
+$light-light-grey: #e0e0e0;
+$light-grey: #c0c0c0;
+$grey: #808080;
+$dark-grey: #404040;
+$dark-dark-grey: #202020;
+$dark: #000000;
+
+// Colour scheme: https://meat.io/oksolar
+$yellow: #ac8300;
+$orange: #d56500;
+$red: #f23749;
+$magenta: #dd459d;
+$violet: #7d80d1;
+$blue: #2b90d8;
+$cyan: #259d94;
+$green: #819500;
+
+.caption {
   display: block;
+  color: $dark-grey;
+
+  @media (prefers-color-scheme: dark) {
+    color: $light-grey;
+  }
+}
+
+.caption-xl {
+  @extend .caption;
+
   margin-bottom: 0.4em;
-  color: #555555;
 }
 
 html, body {
   margin: 0;
 }
 
+.colour-standard {
+  color: $dark-dark-grey;
+  border-color: $dark;
+  background-color: $light;
+
+  @media (prefers-color-scheme: dark) {
+    color: $light;
+    border-color: $light;
+    background-color: $dark-grey;
+  }
+}
+
+.colour-invert {
+  color: $light;
+  border-color: $light;
+  background-color: $dark-grey;
+
+  @media (prefers-color-scheme: dark) {
+    color: $dark-dark-grey;
+    border-color: $dark;
+    background-color: $light;
+  }
+}
+
+body {
+  @extend .colour-standard;
+}
+
 header, footer {
+  @extend .colour-invert;
+
   padding: 1em;
+  border-color: $dark;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $light;
+  }
 }
 
 header {
@@ -20,4 +82,12 @@ header {
 
 footer {
   border-top: 1px solid;
+}
+
+a {
+  color: $blue;
+
+  &:visited {
+    color: $violet;
+  }
 }
