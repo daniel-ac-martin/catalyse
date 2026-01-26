@@ -8,10 +8,10 @@ importers:
 
   .:
     dependencies:
-      '@catalyse/docs-components':
+      '@react-foundry/docs-components':
         specifier: workspace:*
         version: link:lib/docs-components
-      '@catalyse/user-info':
+      '@react-foundry/user-info':
         specifier: workspace:*
         version: link:lib/user-info
       '@storybook/addon-docs':
@@ -42,7 +42,7 @@ importers:
       '@babel/preset-typescript':
         specifier: 7.28.5
         version: 7.28.5(@babel/core@7.28.6)
-      '@catalyse/plop-pack':
+      '@react-foundry/plop-pack':
         specifier: workspace:*
         version: link:lib/plop-pack
       '@types/jest':
@@ -75,30 +75,30 @@ importers:
 
   apps/docs:
     dependencies:
-      '@catalyse/anchor-list':
-        specifier: workspace:*
-        version: link:../../components/anchor-list
-      '@catalyse/components':
-        specifier: workspace:*
-        version: link:../../lib/components
-      '@catalyse/fastify':
-        specifier: workspace:*
-        version: link:../../lib/fastify
-      '@catalyse/fastify-react-router':
-        specifier: workspace:*
-        version: link:../../lib/fastify-react-router
-      '@catalyse/react-router-context':
-        specifier: workspace:*
-        version: link:../../lib/react-router-context
-      '@catalyse/router':
-        specifier: workspace:*
-        version: link:../../lib/router
       '@joshwooding/vite-plugin-react-docgen-typescript':
         specifier: 0.6.3
         version: 0.6.3(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(sass-embedded@1.97.3)(sass@1.97.3))
       '@mdx-js/rollup':
         specifier: 3.1.1
         version: 3.1.1(rollup@4.56.0)
+      '@react-foundry/anchor-list':
+        specifier: workspace:*
+        version: link:../../components/anchor-list
+      '@react-foundry/components':
+        specifier: workspace:*
+        version: link:../../lib/components
+      '@react-foundry/fastify':
+        specifier: workspace:*
+        version: link:../../lib/fastify
+      '@react-foundry/fastify-react-router':
+        specifier: workspace:*
+        version: link:../../lib/fastify-react-router
+      '@react-foundry/react-router-context':
+        specifier: workspace:*
+        version: link:../../lib/react-router-context
+      '@react-foundry/router':
+        specifier: workspace:*
+        version: link:../../lib/router
       '@react-router/fs-routes':
         specifier: 7.13.0
         version: 7.13.0(@react-router/dev@7.13.0(@react-router/serve@7.13.0(react-router@7.13.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(typescript@5.9.3))(@types/node@24.10.9)(react-router@7.13.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(sass-embedded@1.97.3)(sass@1.97.3)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(sass-embedded@1.97.3)(sass@1.97.3)))(typescript@5.9.3)
@@ -121,10 +121,10 @@ importers:
         specifier: 4.0.0
         version: 4.0.0
     devDependencies:
-      '@catalyse/app-plop-pack':
+      '@react-foundry/app-plop-pack':
         specifier: workspace:*
         version: link:../../lib/app-plop-pack
-      '@catalyse/vite-html-react':
+      '@react-foundry/vite-html-react':
         specifier: workspace:*
         version: link:../../lib/vite-html-react
       '@react-router/dev':
@@ -172,10 +172,10 @@ importers:
 
   apps/next-example:
     dependencies:
-      '@catalyse/router':
+      '@react-foundry/router':
         specifier: workspace:*
         version: link:../../lib/router
-      '@catalyse/simple-components':
+      '@react-foundry/simple-components':
         specifier: workspace:*
         version: link:../../lib/simple-components
       next:
@@ -221,7 +221,7 @@ importers:
 
   apps/react-router-example:
     dependencies:
-      '@catalyse/components':
+      '@react-foundry/components':
         specifier: workspace:*
         version: link:../../lib/components
       '@react-router/fs-routes':
@@ -282,7 +282,7 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@catalyse/components':
+      '@react-foundry/components':
         specifier: workspace:*
         version: link:../../lib/components
       react:
@@ -337,27 +337,27 @@ importers:
 
   apps/template:
     dependencies:
-      '@catalyse/anchor-list':
-        specifier: workspace:*
-        version: link:../../components/anchor-list
-      '@catalyse/components':
-        specifier: workspace:*
-        version: link:../../lib/components
-      '@catalyse/fastify':
-        specifier: workspace:*
-        version: link:../../lib/fastify
-      '@catalyse/fastify-react-router':
-        specifier: workspace:*
-        version: link:../../lib/fastify-react-router
-      '@catalyse/react-router-context':
-        specifier: workspace:*
-        version: link:../../lib/react-router-context
-      '@catalyse/router':
-        specifier: workspace:*
-        version: link:../../lib/router
       '@mdx-js/rollup':
         specifier: 3.1.1
         version: 3.1.1(rollup@4.56.0)
+      '@react-foundry/anchor-list':
+        specifier: workspace:*
+        version: link:../../components/anchor-list
+      '@react-foundry/components':
+        specifier: workspace:*
+        version: link:../../lib/components
+      '@react-foundry/fastify':
+        specifier: workspace:*
+        version: link:../../lib/fastify
+      '@react-foundry/fastify-react-router':
+        specifier: workspace:*
+        version: link:../../lib/fastify-react-router
+      '@react-foundry/react-router-context':
+        specifier: workspace:*
+        version: link:../../lib/react-router-context
+      '@react-foundry/router':
+        specifier: workspace:*
+        version: link:../../lib/router
       '@react-router/fs-routes':
         specifier: 7.13.0
         version: 7.13.0(@react-router/dev@7.13.0(@react-router/serve@7.13.0(react-router@7.13.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(typescript@5.9.3))(@types/node@24.10.9)(react-router@7.13.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(sass-embedded@1.97.3)(sass@1.97.3)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(sass-embedded@1.97.3)(sass@1.97.3)))(typescript@5.9.3)
@@ -380,10 +380,10 @@ importers:
         specifier: 4.0.0
         version: 4.0.0
     devDependencies:
-      '@catalyse/app-plop-pack':
+      '@react-foundry/app-plop-pack':
         specifier: workspace:*
         version: link:../../lib/app-plop-pack
-      '@catalyse/vite-html-react':
+      '@react-foundry/vite-html-react':
         specifier: workspace:*
         version: link:../../lib/vite-html-react
       '@react-router/dev':
@@ -428,20 +428,20 @@ importers:
 
   components/anchor:
     dependencies:
-      '@catalyse/client-component-helpers':
+      '@react-foundry/client-component-helpers':
         specifier: workspace:^
         version: link:../../lib/client-component-helpers
-      '@catalyse/component-helpers':
+      '@react-foundry/component-helpers':
         specifier: workspace:^
         version: link:../../lib/component-helpers
-      '@catalyse/router':
+      '@react-foundry/router':
         specifier: workspace:^
         version: link:../../lib/router
-      '@catalyse/uri':
+      '@react-foundry/uri':
         specifier: workspace:^
         version: link:../../lib/uri
     devDependencies:
-      '@catalyse/component-test-helpers':
+      '@react-foundry/component-test-helpers':
         specifier: workspace:*
         version: link:../../lib/component-test-helpers
       '@types/react':
@@ -462,17 +462,17 @@ importers:
 
   components/anchor-list:
     dependencies:
-      '@catalyse/anchor':
+      '@react-foundry/anchor':
         specifier: workspace:^
         version: link:../anchor
-      '@catalyse/component-helpers':
+      '@react-foundry/component-helpers':
         specifier: workspace:^
         version: link:../../lib/component-helpers
-      '@catalyse/router':
+      '@react-foundry/router':
         specifier: workspace:^
         version: link:../../lib/router
     devDependencies:
-      '@catalyse/component-test-helpers':
+      '@react-foundry/component-test-helpers':
         specifier: workspace:*
         version: link:../../lib/component-test-helpers
       '@types/react':
@@ -493,11 +493,11 @@ importers:
 
   components/form:
     dependencies:
-      '@catalyse/forms':
+      '@react-foundry/forms':
         specifier: workspace:^
         version: link:../../lib/forms
     devDependencies:
-      '@catalyse/component-test-helpers':
+      '@react-foundry/component-test-helpers':
         specifier: workspace:*
         version: link:../../lib/component-test-helpers
       '@types/react':
@@ -518,11 +518,11 @@ importers:
 
   components/simple-table:
     dependencies:
-      '@catalyse/component-helpers':
+      '@react-foundry/component-helpers':
         specifier: workspace:^
         version: link:../../lib/component-helpers
     devDependencies:
-      '@catalyse/component-test-helpers':
+      '@react-foundry/component-test-helpers':
         specifier: workspace:*
         version: link:../../lib/component-test-helpers
       '@types/react':
@@ -543,17 +543,17 @@ importers:
 
   components/tabs:
     dependencies:
-      '@catalyse/client-component-helpers':
+      '@react-foundry/client-component-helpers':
         specifier: workspace:^
         version: link:../../lib/client-component-helpers
-      '@catalyse/component-helpers':
+      '@react-foundry/component-helpers':
         specifier: workspace:^
         version: link:../../lib/component-helpers
-      '@catalyse/router':
+      '@react-foundry/router':
         specifier: workspace:^
         version: link:../../lib/router
     devDependencies:
-      '@catalyse/component-test-helpers':
+      '@react-foundry/component-test-helpers':
         specifier: workspace:*
         version: link:../../lib/component-test-helpers
       '@types/react':
@@ -574,7 +574,7 @@ importers:
 
   lib/app-plop-pack:
     dependencies:
-      '@catalyse/plop-pack':
+      '@react-foundry/plop-pack':
         specifier: workspace:^
         version: link:../plop-pack
     devDependencies:
@@ -621,10 +621,10 @@ importers:
 
   lib/components:
     dependencies:
-      '@catalyse/form':
+      '@react-foundry/form':
         specifier: workspace:^
         version: link:../../components/form
-      '@catalyse/simple-components':
+      '@react-foundry/simple-components':
         specifier: workspace:^
         version: link:../simple-components
     devDependencies:
@@ -643,7 +643,7 @@ importers:
 
   lib/create:
     dependencies:
-      '@catalyse/plop-pack':
+      '@react-foundry/plop-pack':
         specifier: workspace:^
         version: link:../plop-pack
       shelljs:
@@ -656,16 +656,16 @@ importers:
 
   lib/docs-components:
     dependencies:
-      '@catalyse/component-helpers':
+      '@react-foundry/component-helpers':
         specifier: workspace:^
         version: link:../component-helpers
-      '@catalyse/memoize':
+      '@react-foundry/memoize':
         specifier: workspace:^
         version: link:../memoize
-      '@catalyse/simple-table':
+      '@react-foundry/simple-table':
         specifier: workspace:^
         version: link:../../components/simple-table
-      '@catalyse/tabs':
+      '@react-foundry/tabs':
         specifier: workspace:^
         version: link:../../components/tabs
       prettier:
@@ -702,18 +702,18 @@ importers:
 
   lib/fastify:
     dependencies:
-      '@catalyse/fastify-auth':
-        specifier: workspace:^
-        version: link:../fastify-auth
-      '@catalyse/fastify-dev-logger':
-        specifier: workspace:^
-        version: link:../fastify-dev-logger
-      '@catalyse/fastify-harden':
-        specifier: workspace:^
-        version: link:../fastify-harden
       '@fastify/rate-limit':
         specifier: ^10.3.0
         version: 10.3.0
+      '@react-foundry/fastify-auth':
+        specifier: workspace:^
+        version: link:../fastify-auth
+      '@react-foundry/fastify-dev-logger':
+        specifier: workspace:^
+        version: link:../fastify-dev-logger
+      '@react-foundry/fastify-harden':
+        specifier: workspace:^
+        version: link:../fastify-harden
       close-with-grace:
         specifier: ^2.4.0
         version: 2.4.0
@@ -721,7 +721,7 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1
     devDependencies:
-      '@catalyse/types-helpers':
+      '@react-foundry/types-helpers':
         specifier: workspace:*
         version: link:../types-helpers
       jest:
@@ -739,15 +739,15 @@ importers:
 
   lib/fastify-auth:
     dependencies:
-      '@catalyse/fastify-session':
-        specifier: workspace:^
-        version: link:../fastify-session
       '@fastify/error':
         specifier: ^4.2.0
         version: 4.2.0
       '@fastify/rate-limit':
         specifier: ^10.3.0
         version: 10.3.0
+      '@react-foundry/fastify-session':
+        specifier: workspace:^
+        version: link:../fastify-session
       base64url:
         specifier: ^3.0.1
         version: 3.0.1
@@ -786,7 +786,7 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
     devDependencies:
-      '@catalyse/types-helpers':
+      '@react-foundry/types-helpers':
         specifier: workspace:*
         version: link:../types-helpers
       fastify:
@@ -848,15 +848,15 @@ importers:
 
   lib/fastify-react-router:
     dependencies:
-      '@catalyse/react-router-context':
-        specifier: workspace:^
-        version: link:../react-router-context
       '@fastify/middie':
         specifier: ^9.1.0
         version: 9.1.0
       '@fastify/static':
         specifier: ^9.0.0
         version: 9.0.0
+      '@react-foundry/react-router-context':
+        specifier: workspace:^
+        version: link:../react-router-context
       '@react-router/node':
         specifier: ^7.13.0
         version: 7.13.0(react-router@7.13.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(typescript@5.9.3)
@@ -864,10 +864,10 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
     devDependencies:
-      '@catalyse/fastify-auth':
+      '@react-foundry/fastify-auth':
         specifier: workspace:*
         version: link:../fastify-auth
-      '@catalyse/fastify-harden':
+      '@react-foundry/fastify-harden':
         specifier: workspace:*
         version: link:../fastify-harden
       fastify:
@@ -897,14 +897,14 @@ importers:
 
   lib/fastify-session:
     dependencies:
-      '@catalyse/fastify-consent-cookies':
+      '@react-foundry/fastify-consent-cookies':
         specifier: workspace:^
         version: link:../fastify-consent-cookies
       fastify-plugin:
         specifier: ^5.1.0
         version: 5.1.0
     devDependencies:
-      '@catalyse/types-helpers':
+      '@react-foundry/types-helpers':
         specifier: workspace:*
         version: link:../types-helpers
       fastify:
@@ -925,13 +925,13 @@ importers:
 
   lib/forms:
     dependencies:
-      '@catalyse/component-helpers':
+      '@react-foundry/component-helpers':
         specifier: workspace:^
         version: link:../component-helpers
-      '@catalyse/router':
+      '@react-foundry/router':
         specifier: workspace:^
         version: link:../router
-      '@catalyse/uri':
+      '@react-foundry/uri':
         specifier: workspace:^
         version: link:../uri
       fast-deep-equal:
@@ -1011,7 +1011,7 @@ importers:
 
   lib/react-router-context:
     devDependencies:
-      '@catalyse/types':
+      '@react-foundry/types':
         specifier: workspace:*
         version: link:../types
       jest:
@@ -1032,7 +1032,7 @@ importers:
 
   lib/router:
     dependencies:
-      '@catalyse/uri':
+      '@react-foundry/uri':
         specifier: workspace:^
         version: link:../uri
     devDependencies:
@@ -1060,16 +1060,16 @@ importers:
 
   lib/simple-components:
     dependencies:
-      '@catalyse/anchor':
+      '@react-foundry/anchor':
         specifier: workspace:^
         version: link:../../components/anchor
-      '@catalyse/anchor-list':
+      '@react-foundry/anchor-list':
         specifier: workspace:^
         version: link:../../components/anchor-list
-      '@catalyse/simple-table':
+      '@react-foundry/simple-table':
         specifier: workspace:^
         version: link:../../components/simple-table
-      '@catalyse/tabs':
+      '@react-foundry/tabs':
         specifier: workspace:^
         version: link:../../components/tabs
     devDependencies:
@@ -1088,7 +1088,7 @@ importers:
 
   lib/types:
     devDependencies:
-      '@catalyse/types-helpers':
+      '@react-foundry/types-helpers':
         specifier: workspace:*
         version: link:../types-helpers
       jest:
@@ -1143,10 +1143,10 @@ importers:
 
   lib/user-info:
     devDependencies:
-      '@catalyse/component-test-helpers':
+      '@react-foundry/component-test-helpers':
         specifier: workspace:*
         version: link:../component-test-helpers
-      '@catalyse/types':
+      '@react-foundry/types':
         specifier: workspace:*
         version: link:../types
       '@types/react':
