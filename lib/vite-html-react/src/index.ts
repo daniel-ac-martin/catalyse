@@ -1,5 +1,4 @@
 import type { Plugin } from 'vite';
-import '../types/vite-html-react.d.ts';
 
 export type HtmlReactOptions = undefined | {
   extensions?: string[]
