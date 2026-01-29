@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/user-info",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A React context for providing information on the user.",
   "main": "src/UserInfo.ts",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/router",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An abstraction layer over the routers from react-router and Next.js.",
   "main": "src/index.ts",
   "exports": {

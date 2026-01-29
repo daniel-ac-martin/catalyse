@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/tabs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A component for multiple, related sections of content.",
   "main": "src/Tabs.tsx",
   "sass": "assets/Tabs.scss",
@@ -47,7 +47,7 @@
     "@react-foundry/router": "workspace:^"
   },
   "peerDependencies": {
-    "@react-foundry/docs-components": "^0.1.2",
+    "@react-foundry/docs-components": "^0.1.3",
     "@storybook/addon-docs": "^9.1.17",
     "react": "^19.2.3"
   },
