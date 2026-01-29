@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/fastify-harden",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Fastify plugin for extra cyber-security hardening.",
   "main": "src/index.ts",
   "exports": {
