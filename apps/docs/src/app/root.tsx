@@ -55,7 +55,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             />
             <A href="https://github.com/daniel-ac-martin/react-foundry/issues/new">Provide feedback</A>
           </header>
-          <div class="body">
+          <div className="body">
             {children}
           </div>
           <footer>
