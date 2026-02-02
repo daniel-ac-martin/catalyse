@@ -89,7 +89,9 @@ $(dist_dir)/package.base.json: $(source_dir)/package.json
 	$(strip_package) '$(<)' > '$(@)'
 	$(patch_package) '$(@)'
 
-$(build_dir)/skel-prototype/package.json: $(plopfile) $(target_dir)/.github/workflows/change-assurance.yml $(ci_deps)
+$(build_dir)/skel-prototype/package.json: $(build_dir)/skel-prototype/tsconfig.orig.json
+
+$(build_dir)/skel-prototype/tsconfig.orig.json: $(plopfile) $(target_dir)/.github/workflows/change-assurance.yml $(ci_deps)
 	./node_modules/.bin/plop --plopfile '$(plopfile)' app 'docs' 'Documentation' 'Documentation website.'
 	$(cp) -r '$(target_dir)/apps/docs/' '$(@D)'
 	$(cp) -r '$(target_dir)/.github/' '$(@D)/.github'
@@ -97,11 +99,13 @@ $(build_dir)/skel-prototype/package.json: $(plopfile) $(target_dir)/.github/work
 	$(cp) '$(target_dir)/cypress.config.mjs' '$(@D)'
 	$(cp) '$(target_dir)/jest.config.base.js' '$(@D)/jest.config.base.js'
 	sed -i 's/..\/..\/jest.config.base/.\/jest.config.base/' '$(@D)/jest.config.cjs'
-	rm '$(@D)/README.md' '$(@D)/tsconfig.json' '$(@D)/.github/actions/setup/action.yml' '$(@D)/.github/workflows/change-assurance.yml' '$(@D)/.github/workflows/deploy.yml'
+	rm '$(@D)/README.md' '$(@D)/.github/actions/setup/action.yml' '$(@D)/.github/workflows/change-assurance.yml' '$(@D)/.github/workflows/deploy.yml'
+	mv '$(@D)/tsconfig.json' '$(@)'
 
-$(build_dir)/skel-prototype/tsconfig.json: $(source_dir)/tsconfig.json $(source_dir)/tsconfig.vite.json $(build_dir)/skel-prototype/package.json
+$(build_dir)/skel-prototype/tsconfig.json: $(build_dir)/skel-prototype/tsconfig.orig.json $(source_dir)/tsconfig.vite.json $(source_dir)/tsconfig.json
 	mkdir -p '$(@D)'
-	jq -s '.[0].compilerOptions * .[1].compilerOptions | { compilerOptions: . }' '$(<)' '$(word 2,$^)' > '$(@)'
+	jq -s '.[2] * .[1] * .[0] | del(.extends)' '$(<)' '$(word 2,$^)' '$(word 3,$^)' > '$(@)'
+	rm '$(<)'
 
 $(build_dir)/package.app.json: $(build_dir)/skel-prototype/package.json $(docs_source_dir)
 	rm '$(docs_target_dir)/vite.config.ts' '$(docs_target_dir)/src/app/routes/'* '$(docs_target_dir)/src/app/root.tsx'
