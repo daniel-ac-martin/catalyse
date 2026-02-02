@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/uri",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A more forgiving alternative to JavaScript's standard URL class.",
   "main": "src/index.ts",
   "exports": {
