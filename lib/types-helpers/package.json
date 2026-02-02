@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/types-helpers",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Types to aid in defining other types.",
   "main": "src/index.ts",
   "exports": {
