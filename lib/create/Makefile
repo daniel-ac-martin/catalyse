@@ -99,7 +99,7 @@ $(build_dir)/skel-prototype/tsconfig.orig.json: $(plopfile) $(target_dir)/.githu
 	$(cp) '$(target_dir)/cypress.config.mjs' '$(@D)'
 	$(cp) '$(target_dir)/jest.config.base.js' '$(@D)/jest.config.base.js'
 	sed -i 's/..\/..\/jest.config.base/.\/jest.config.base/' '$(@D)/jest.config.cjs'
-	rm '$(@D)/README.md' '$(@D)/.github/actions/setup/action.yml' '$(@D)/.github/workflows/change-assurance.yml' '$(@D)/.github/workflows/deploy.yml'
+	rm '$(@D)/README.md' '$(@D)/src/app/config.ts' '$(@D)/.github/actions/setup/action.yml' '$(@D)/.github/workflows/change-assurance.yml' '$(@D)/.github/workflows/deploy.yml'
 	mv '$(@D)/tsconfig.json' '$(@)'
 
 $(build_dir)/skel-prototype/tsconfig.json: $(build_dir)/skel-prototype/tsconfig.orig.json $(source_dir)/tsconfig.vite.json $(source_dir)/tsconfig.json
