@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/docs",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React Foundry documentation website.",
   "private": true,
   "type": "module",
@@ -45,7 +45,7 @@
     "serverless-http": "4.0.0"
   },
   "peerDependencies": {
-    "@react-foundry/docs-components": "^0.1.6"
+    "@react-foundry/docs-components": "^0.1.7"
   },
   "devDependencies": {
     "@react-foundry/app-plop-pack": "workspace:*",
