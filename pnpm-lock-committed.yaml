@@ -730,8 +730,8 @@ importers:
         specifier: ^2.5.0
         version: 2.5.0
       fastify:
-        specifier: ^5.8.2
-        version: 5.8.2
+        specifier: ^5.8.4
+        version: 5.8.4
     devDependencies:
       '@react-foundry/types-helpers':
         specifier: workspace:*
@@ -771,8 +771,8 @@ importers:
         version: 5.7.1
     devDependencies:
       fastify:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: 5.8.4
+        version: 5.8.4
       jest:
         specifier: 30.3.0
         version: 30.3.0(@types/node@24.12.0)(esbuild-register@3.6.0(esbuild@0.27.2))
@@ -802,8 +802,8 @@ importers:
         specifier: workspace:*
         version: link:../types-helpers
       fastify:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: 5.8.4
+        version: 5.8.4
       jest:
         specifier: 30.3.0
         version: 30.3.0(@types/node@24.12.0)(esbuild-register@3.6.0(esbuild@0.27.2))
@@ -843,8 +843,8 @@ importers:
         version: 5.1.0
     devDependencies:
       fastify:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: 5.8.4
+        version: 5.8.4
       jest:
         specifier: 30.3.0
         version: 30.3.0(@types/node@24.12.0)(esbuild-register@3.6.0(esbuild@0.27.2))
@@ -883,8 +883,8 @@ importers:
         specifier: workspace:*
         version: link:../fastify-harden
       fastify:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: 5.8.4
+        version: 5.8.4
       jest:
         specifier: 30.3.0
         version: 30.3.0(@types/node@24.12.0)(esbuild-register@3.6.0(esbuild@0.27.2))
@@ -920,8 +920,8 @@ importers:
         specifier: workspace:*
         version: link:../types-helpers
       fastify:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: 5.8.4
+        version: 5.8.4
       jest:
         specifier: 30.3.0
         version: 30.3.0(@types/node@24.12.0)(esbuild-register@3.6.0(esbuild@0.27.2))
@@ -4568,8 +4568,8 @@ packages:
   fastify-plugin@5.1.0:
     resolution: {integrity: sha512-FAIDA8eovSt5qcDgcBvDuX/v0Cjz0ohGhENZ/wpc3y+oZCY2afZ9Baqql3g/lC+OHRnciQol4ww7tuthOb9idw==}
 
-  fastify@5.8.2:
-    resolution: {integrity: sha512-lZmt3navvZG915IE+f7/TIVamxIwmBd+OMB+O9WBzcpIwOo6F0LTh0sluoMFk5VkrKTvvrwIaoJPkir4Z+jtAg==}
+  fastify@5.8.4:
+    resolution: {integrity: sha512-sa42J1xylbBAYUWALSBoyXKPDUvM3OoNOibIefA+Oha57FryXKKCZarA1iDntOCWp3O35voZLuDg2mdODXtPzQ==}
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
@@ -10540,7 +10540,7 @@ snapshots:
 
   fastify-plugin@5.1.0: {}
 
-  fastify@5.8.2:
+  fastify@5.8.4:
     dependencies:
       '@fastify/ajv-compiler': 4.0.5
       '@fastify/error': 4.2.0
