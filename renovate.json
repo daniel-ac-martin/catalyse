@@ -19,6 +19,13 @@
     },
     {
       "matchPackageNames": [
+        "fastify",
+        "@fastify/**"
+      ],
+      "groupName": "fastify"
+    },
+    {
+      "matchPackageNames": [
         "@types/babel-jest",
         "@types/jest",
         "@types/ts-jest",
