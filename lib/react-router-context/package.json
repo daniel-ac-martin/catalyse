@@ -41,6 +41,6 @@
     "jest-environment-jsdom": "30.3.0",
     "react-router": "7.13.0",
     "ts-jest": "29.4.6",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   }
 }
