@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/anchor",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A drop-in replacement for the 'a' element.",
   "main": "src/Anchor.tsx",
   "sass": "assets/Anchor.scss",
@@ -48,7 +48,7 @@
     "@react-foundry/uri": "workspace:^"
   },
   "peerDependencies": {
-    "@react-foundry/docs-components": "^0.1.7",
+    "@react-foundry/docs-components": "^0.1.8",
     "@storybook/addon-docs": "^9.1.20",
     "react": "^19.2.4"
   },
