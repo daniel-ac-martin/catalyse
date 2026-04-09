@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/fastify-auth",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Authentication plugin for Fastify.",
   "main": "src/index.ts",
   "exports": {
