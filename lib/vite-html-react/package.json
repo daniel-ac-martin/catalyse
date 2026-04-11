@@ -19,7 +19,6 @@
       ".": {
         "types": "./types/index.d.ts",
         "import": "./dist/index.js",
-        "require": "./dist/index.cjs",
         "default": "./dist/index.js"
       }
     }
@@ -31,9 +30,7 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "prepublishOnly": "npm run clean && npm run build",
-    "build": "npm run build:cjs && npm run build:esm",
-    "build:esm": "tsc -m es2022",
-    "build:cjs": "tsc -m commonjs && find dist -name '*.js' -exec sh -c 'mv \"$0\" \"${0%.js}.cjs\"' {} \\;",
+    "build": "tsc",
     "clean": "rm -rf dist tsconfig.tsbuildinfo"
   },
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",

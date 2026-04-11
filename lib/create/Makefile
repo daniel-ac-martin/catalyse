@@ -12,7 +12,7 @@ ci_sources := $(wildcard \
 	$(source_dir)/.github/workflows/deploy-to-heroku.yml \
 	$(source_dir)/.github/workflows/publish.yml \
 	$(source_dir)/.jest/*/* \
-	$(source_dir)/cypress.config.mjs \
+	$(source_dir)/cypress.config.js \
 	$(source_dir)/jest.config.base.js \
 )
 sources := $(wildcard \
@@ -33,14 +33,14 @@ sources := $(wildcard \
 	$(source_dir)/apps/storybook/src/manager.ts \
 	$(source_dir)/apps/storybook/src/preview.ts \
 	$(source_dir)/apps/README.md \
-	$(source_dir)/babel.config.js \
-	$(source_dir)/cypress.config.mjs \
+	$(source_dir)/babel.config.cjs \
+	$(source_dir)/cypress.config.js \
 	$(source_dir)/components/README.md \
 	$(source_dir)/docs/about.md \
 	$(source_dir)/docs/contributing.md \
 	$(source_dir)/docs/get-started.md \
 	$(source_dir)/docs/working-on-your-project.md \
-	$(source_dir)/jest.config*.js \
+	$(source_dir)/jest.config*.cjs \
 	$(source_dir)/lib/README.md \
 	$(source_dir)/pnpm-lock-committed.yaml \
 	$(source_dir)/pnpm-workspace.yaml \
@@ -70,9 +70,9 @@ skel_deps = \
 	$(target_dir)/.github/workflows/deploy.yml \
 	$(patsubst $(source_dir)/%,$(target_dir)/%,$(sources)) \
 	$(patsubst $(docs_source_dir)/%,$(docs_target_dir)/%,$(docs_sources)) \
-	$(target_dir)/plopfile.mjs \
+	$(target_dir)/plopfile.js \
 	$(docs_target_dir)/package.json
-plopfile = $(target_dir)/plopfile.mjs
+plopfile = $(target_dir)/plopfile.js
 
 .PHONY: all clean
 
@@ -96,8 +96,8 @@ $(build_dir)/skel-prototype/tsconfig.orig.json: $(plopfile) $(target_dir)/.githu
 	$(cp) -r '$(target_dir)/apps/docs/' '$(@D)'
 	$(cp) -r '$(target_dir)/.github/' '$(@D)/.github'
 	$(cp) -r '$(target_dir)/.jest/' '$(@D)/.jest'
-	$(cp) '$(target_dir)/cypress.config.mjs' '$(@D)'
-	$(cp) '$(target_dir)/jest.config.base.js' '$(@D)/jest.config.base.js'
+	$(cp) '$(target_dir)/cypress.config.js' '$(@D)'
+	$(cp) '$(target_dir)/jest.config.base.cjs' '$(@D)/jest.config.base.cjs'
 	sed -i 's/..\/..\/jest.config.base/.\/jest.config.base/' '$(@D)/jest.config.cjs'
 	rm '$(@D)/README.md' '$(@D)/src/app/config.ts' '$(@D)/.github/actions/setup/action.yml' '$(@D)/.github/workflows/change-assurance.yml' '$(@D)/.github/workflows/deploy.yml'
 	mv '$(@D)/tsconfig.json' '$(@)'
@@ -139,7 +139,7 @@ $(target_dir)/.github/workflows/deploy.yml: $(source_dir)/.github/workflows/depl
 	mkdir -p '$(@D)'
 	sed -n '/deploy-/q;p' '$(<)' > '$(@)'
 
-$(plopfile): $(source_dir)/plopfile.mjs
+$(plopfile): $(source_dir)/plopfile.js
 	mkdir -p '$(@D)'
 	$(cp) '$(<)' '$(@D)'
 

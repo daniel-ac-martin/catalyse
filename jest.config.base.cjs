@@ -10,10 +10,10 @@ const config = {
   testEnvironmentOptions: {
     url: 'http://localhost/'
   },
-  setupFilesAfterEnv: [path.resolve(__dirname, '.jest', 'setupAfterEnv.js')],
+  setupFilesAfterEnv: [path.resolve(__dirname, '.jest', 'setupAfterEnv.cjs')],
   moduleNameMapper: {
-    '\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': path.resolve(__dirname, '.jest', 'mocks', 'file.js'),
-    '\\.(css|scss|sass|less)$': path.resolve(__dirname, '.jest', 'mocks', 'style.js')
+    '\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': path.resolve(__dirname, '.jest', 'mocks', 'file.cjs'),
+    '\\.(css|scss|sass|less)$': path.resolve(__dirname, '.jest', 'mocks', 'style.cjs')
   },
   moduleDirectories: [
     'node_modules'

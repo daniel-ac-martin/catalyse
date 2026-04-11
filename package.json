@@ -2,6 +2,7 @@
   "name": "react-foundry",
   "version": "0.1.9",
   "description": "A framework for quickly building digital services for government.",
+  "type": "module",
   "bin": "lib/create/bin/create",
   "scripts": {
     "create": "plop",
