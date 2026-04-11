@@ -2,6 +2,7 @@
   "name": "@react-foundry/anchor",
   "version": "0.1.9",
   "description": "A drop-in replacement for the 'a' element.",
+  "type": "module",
   "main": "src/Anchor.tsx",
   "sass": "assets/Anchor.scss",
   "exports": {
@@ -12,15 +13,14 @@
   },
   "publishConfig": {
     "main": "dist/Anchor.js",
-    "module": "dist/Anchor.mjs",
+    "module": "dist/Anchor.js",
     "typings": "dist/Anchor.d.ts",
     "exports": {
       ".": {
         "sass": "./assets/Anchor.scss",
         "types": "./dist/Anchor.d.ts",
-        "import": "./dist/Anchor.mjs",
-        "require": "./dist/Anchor.js",
-        "default": "./dist/Anchor.mjs"
+        "import": "./dist/Anchor.js",
+        "default": "./dist/Anchor.js"
       }
     }
   },
@@ -31,9 +31,7 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "prepublishOnly": "npm run clean && npm run build",
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc -m es2022 && find dist -name '*.js' -exec sh -c 'mv \"$0\" \"${0%.js}.mjs\"' {} \\;",
-    "build:cjs": "tsc",
+    "build": "tsc",
     "clean": "rm -rf dist tsconfig.tsbuildinfo"
   },
   "author": "Daniel A.C. Martin <npm@daniel-martin.co.uk> (http://daniel-martin.co.uk/)",

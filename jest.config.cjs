@@ -1,11 +1,11 @@
 'use strict';
 
-const baseConfig = require('./jest.config.base');
+const baseConfig = require('./jest.config.base.cjs');
 
 const config = {
   ...baseConfig,
   projects: [
-    '<rootDir>/{apps,components,lib}/*/jest.config.js'
+    '<rootDir>/{apps,components,lib}/*/jest.config.cjs'
   ],
   coverageDirectory: '<rootDir>/coverage/',
   collectCoverageFrom: [
