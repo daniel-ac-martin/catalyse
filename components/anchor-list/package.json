@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/anchor-list",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A list of anchors.",
   "type": "module",
   "main": "src/AnchorList.tsx",
@@ -45,7 +45,7 @@
     "@react-foundry/router": "workspace:^"
   },
   "peerDependencies": {
-    "@react-foundry/docs-components": "^0.2.1",
+    "@react-foundry/docs-components": "^0.2.2",
     "@storybook/addon-docs": "^9.1.20",
     "react": "^19.2.5"
   },
