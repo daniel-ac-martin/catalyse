@@ -29,11 +29,6 @@
         "types": "./dist/next.d.ts",
         "import": "./dist/next.js",
         "default": "./dist/next.js"
-      },
-      "./remix": {
-        "types": "./dist/remix.d.ts",
-        "import": "./dist/remix.js",
-        "default": "./dist/remix.js"
       }
     }
   },
