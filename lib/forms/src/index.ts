@@ -177,3 +177,4 @@ export const Form: FC<FormProps<any>> = ({
 
 export default Form;
 export type { ControlProps, FieldProps, RawField } from './hocs';
+export type { Validator } from './validators';
