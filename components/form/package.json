@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/form",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A component to collect information from the user.",
   "type": "module",
   "main": "src/Form.ts",
@@ -43,7 +43,7 @@
     "@react-foundry/forms": "workspace:^"
   },
   "peerDependencies": {
-    "@react-foundry/docs-components": "^0.2.3",
+    "@react-foundry/docs-components": "^0.2.4",
     "@storybook/addon-docs": "^9.1.20",
     "react": "^19.2.5"
   },
