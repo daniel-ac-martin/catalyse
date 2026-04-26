@@ -24,7 +24,8 @@ const _useLocation: _UseLocation = () => {
     key: '',
     pathname,
     search,
-    hash: ''
+    hash: '',
+    unstable_mask: undefined
   };
 
   return location;

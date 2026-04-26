@@ -15,7 +15,8 @@ const _useLocation: _UseLocation = () => ({
   key: '',
   pathname: '',
   search: '',
-  hash: ''
+  hash: '',
+  unstable_mask: undefined
 });
 export const useLocation: UseLocation = makeUseLocation(_useLocation);
 export const useIsActive: UseIsActive = makeUseIsActive(useLocation);
