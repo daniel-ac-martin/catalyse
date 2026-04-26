@@ -1,6 +1,6 @@
 {
   "name": "@react-foundry/storybook",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Storybook for React Foundry.",
   "private": true,
   "type": "module",
