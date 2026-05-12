@@ -39,8 +39,8 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "jest": "30.3.0",
-    "jest-environment-jsdom": "30.3.0",
+    "jest": "30.4.2",
+    "jest-environment-jsdom": "30.4.1",
     "ts-jest": "29.4.9",
     "typescript": "5.9.3",
     "vite": "7.3.2"
