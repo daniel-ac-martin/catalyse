@@ -34,7 +34,7 @@
     "react-components"
   ],
   "peerDependencies": {
-    "react": "^19.2.5"
+    "react": "^19.2.6"
   },
   "devDependencies": {
     "@react-foundry/component-test-helpers": "workspace:*",
