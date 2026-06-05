@@ -18,12 +18,12 @@
     "@react-foundry/router": "workspace:*",
     "@react-foundry/simple-components": "workspace:*",
     "next": "16.2.7",
-    "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
     "@types/node": "24.12.4",
-    "@types/react": "19.2.15",
+    "@types/react": "19.2.16",
     "@types/react-dom": "19.2.3",
     "cypress": "15.16.0",
     "jest": "30.4.2",
