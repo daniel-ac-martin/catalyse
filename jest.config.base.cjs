@@ -13,7 +13,8 @@ const config = {
   setupFilesAfterEnv: [path.resolve(__dirname, '.jest', 'setupAfterEnv.cjs')],
   moduleNameMapper: {
     '\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': path.resolve(__dirname, '.jest', 'mocks', 'file.cjs'),
-    '\\.(css|scss|sass|less)$': path.resolve(__dirname, '.jest', 'mocks', 'style.cjs')
+    '\\.(css|scss|sass|less)$': path.resolve(__dirname, '.jest', 'mocks', 'style.cjs'),
+    '^(\\.{1,2}/.*)\\.js$': '$1'
   },
   moduleDirectories: [
     'node_modules'
