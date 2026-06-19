@@ -46,7 +46,7 @@
     "react-components"
   ],
   "dependencies": {
-    "@react-foundry/component-helpers": "{{#if (eq (pkg 'name')'react-foundry')}}workspace:^0.3.0"
+    "@react-foundry/component-helpers": "{{#if (eq (pkg 'name')'react-foundry')}}workspace:*{{else}}0.3.0{{/if}}"
   },
   "peerDependencies": {
     "@react-foundry/docs-components": "^0.3.0",
