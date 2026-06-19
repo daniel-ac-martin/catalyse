@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@fastify/error": "^4.2.0",
-    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/rate-limit": "^11.0.0",
     "@react-foundry/fastify-session": "workspace:^",
     "base64url": "^3.0.1",
     "fastify-plugin": "^6.0.0",
