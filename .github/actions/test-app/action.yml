@@ -1,5 +1,5 @@
 name: Test application
-description: Test a Catalyse application or deployment
+description: Test a react-foundry application or deployment
 inputs:
   app:
     required: false

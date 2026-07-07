@@ -1,5 +1,5 @@
 name: Set-up
-description: Set-up for building, testing and deployment of Catalyse projects
+description: Set-up for building, testing and deployment of react-foundry projects
 inputs:
   node:
     description: The version of Node.js to use.
