@@ -1,4 +1,4 @@
-import type { Session, SessionProvider, SessionData } from './common';
+import type { Session, SessionProvider, SessionData } from './common.js';
 
 export type CustomOptions = Session;
 

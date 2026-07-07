@@ -1,10 +1,10 @@
 import type { FastifyError, FastifyPluginCallback, FastifyReply as _FastifyReply } from 'fastify';
-import type { CSPOptions } from './content-security-policy';
-import type { PPOptions } from './permissions-policy';
+import type { CSPOptions } from './content-security-policy.js';
+import type { PPOptions } from './permissions-policy.js';
 
 import fp from 'fastify-plugin';
-import { permissionsPolicy } from './permissions-policy'
-import { contentSecurityPolicy } from './content-security-policy'
+import { permissionsPolicy } from './permissions-policy.js'
+import { contentSecurityPolicy } from './content-security-policy.js'
 
 type FastifyHardenPluginOptions = {
   contentSecurityPolicy?: Omit<CSPOptions, 'dev' | 'nonce'>

@@ -1,4 +1,4 @@
-import type { SessionProvider, SessionData } from './common';
+import type { SessionProvider, SessionData } from './common.js';
 
 // A simple in-memory session
 //

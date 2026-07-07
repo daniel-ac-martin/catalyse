@@ -1,9 +1,9 @@
-import type { AuthBagger, Deserialize, SubRouteHandlerMethod, Serialize, UserProfile } from './common';
+import type { AuthBagger, Deserialize, SubRouteHandlerMethod, Serialize, UserProfile } from './common.js';
 
 import base64url from 'base64url';
 import { Client, Issuer, custom, generators } from 'openid-client';
 import { createError } from '@fastify/error';
-import { id } from './common';
+import { id } from './common.js';
 
 // OpenID Connect
 

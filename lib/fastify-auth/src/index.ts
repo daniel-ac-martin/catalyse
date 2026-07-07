@@ -1,19 +1,19 @@
 import type { FastifyPluginCallback } from 'fastify';
 import type { RateLimitOptions, RateLimitPluginOptions } from '@fastify/rate-limit';
 import type { FastifySessionOptions } from '@react-foundry/fastify-session';
-import type { Options as _BasicOptions } from './basic';
-import type { Options as _DummyOptions } from './dummy';
-import type { Options as _HeadersOptions } from './headers';
-import type { Options as _OIDCOptions } from './oidc';
-import type { Maybe, Reply, Request, RequestFull, Serialize, SerDes, UserProfile } from './common';
+import type { Options as _BasicOptions } from './basic.js';
+import type { Options as _DummyOptions } from './dummy.js';
+import type { Options as _HeadersOptions } from './headers.js';
+import type { Options as _OIDCOptions } from './oidc.js';
+import type { Maybe, Reply, Request, RequestFull, Serialize, SerDes, UserProfile } from './common.js';
 
 import fp from 'fastify-plugin';
 import fastifyRateLimit from '@fastify/rate-limit';
 import fastifySession, { SessionStore } from '@react-foundry/fastify-session';
-import { basic } from './basic';
-import { dummy } from './dummy';
-import { headers } from './headers';
-import { oidc } from './oidc';
+import { basic } from './basic.js';
+import { dummy } from './dummy.js';
+import { headers } from './headers.js';
+import { oidc } from './oidc.js';
 
 export enum AuthMethod {
   None = 'none',
@@ -243,5 +243,5 @@ export type {
 export type {
   ReplyFull,
   RouteHandlerMethod
-} from './common';
+} from './common.js';
 export { SessionStore } from '@react-foundry/fastify-session';

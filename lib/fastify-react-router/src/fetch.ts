@@ -8,7 +8,7 @@ import {
   createReadableStreamFromReadable,
   readableStreamToReadable,
   readableStreamToString,
-} from './stream';
+} from './stream.js';
 
 type ExtraData = {
   cspNonce?: string

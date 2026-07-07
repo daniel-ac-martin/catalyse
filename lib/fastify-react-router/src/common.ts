@@ -14,7 +14,7 @@ import { EnhancedProvider } from '@react-foundry/react-router-context';
 
 import { RouterContextProvider, createRequestHandler } from 'react-router';
 import { cspNonceContext, userInfoContext } from '@react-foundry/react-router-context';
-import { createRequest, sendResponse } from './fetch';
+import { createRequest, sendResponse } from './fetch.js';
 
 type MaybePromise<T> = T | Promise<T>;
 
@@ -73,4 +73,4 @@ export const addHandler = (
 };
 
 export type { ServerBuild };
-export type { EnhancedRequest as Request } from './fetch';
+export type { EnhancedRequest as Request } from './fetch.js';

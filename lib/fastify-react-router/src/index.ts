@@ -1,9 +1,9 @@
 import type { FastifyPluginCallback } from 'fastify';
-import type { Options, ServerBuild } from './common';
+import type { Options, ServerBuild } from './common.js';
 
 import fp from 'fastify-plugin';
 import fastifyStatic from '@fastify/static';
-import { addHandler } from './common';
+import { addHandler } from './common.js';
 
 type FastifyReactRouterPluginOptions = Options & {
   assets: string
@@ -33,4 +33,4 @@ export default fastifyReactRouter;
 export type {
   FastifyReactRouterPluginOptions as FastifyReactRouterOptions
 };
-export type { GetLoadContextFunction, Request } from './common';
+export type { GetLoadContextFunction, Request } from './common.js';
