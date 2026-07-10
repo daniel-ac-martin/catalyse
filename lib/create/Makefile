@@ -1,5 +1,6 @@
 cp = cp -P --preserve=all
-patch_package = sed -Ei 's/"@(catalyse)\/([^"]+)": "workspace:(.+)"/"@\1\/\2": "\3"/'
+version := $(shell jq -r '.version' '../../package.json')
+patch_package = sed -Ei 's/"@(react-foundry)\/([^"]+)": "workspace:.+"/"@\1\/\2": "$(version)"/'
 strip_package = jq '{ scripts: .scripts, devDependencies: .devDependencies }'
 build_dir = ./build
 dist_dir = ./dist
