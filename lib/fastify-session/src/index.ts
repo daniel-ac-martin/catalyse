@@ -1,15 +1,15 @@
 import type { FastifyPluginCallback } from 'fastify';
 import type { Cookie, FastifyConsentCookiesOptions } from '@react-foundry/fastify-consent-cookies';
-import type { Reply, ReplyFull, Request, RequestFull, SessionData } from './common';
-import type { CustomOptions as _CustomOptions } from './custom';
-import type { MemoryOptions as _MemoryOptions } from './memory';
+import type { Reply, ReplyFull, Request, RequestFull, SessionData } from './common.js';
+import type { CustomOptions as _CustomOptions } from './custom.js';
+import type { MemoryOptions as _MemoryOptions } from './memory.js';
 
 import { randomUUID } from 'node:crypto';
 import fp from 'fastify-plugin';
 import { defaultSecret, fastifyConsentCookies } from '@react-foundry/fastify-consent-cookies';
-import { SessionStore } from './common';
-import { customSession } from './custom';
-import { memorySession } from './memory';
+import { SessionStore } from './common.js';
+import { customSession } from './custom.js';
+import { memorySession } from './memory.js';
 
 type Store<T> = { store: T };
 
@@ -177,4 +177,4 @@ export type {
 };
 export type {
   Session
-} from './common';
+} from './common.js';

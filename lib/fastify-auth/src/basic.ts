@@ -1,5 +1,5 @@
 import { createError } from '@fastify/error';
-import { AuthBagger, UserProfile } from './common';
+import { AuthBagger, UserProfile } from './common.js';
 
 // Basic authentication
 

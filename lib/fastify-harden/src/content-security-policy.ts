@@ -1,6 +1,6 @@
-import type { Maybe } from './common';
+import type { Maybe } from './common.js';
 
-import { id, isDefined } from './common';
+import { id, isDefined } from './common.js';
 
 export type Source = '\'none\'' | '\'self\'' | string
 export type Sources = Source | Source[]

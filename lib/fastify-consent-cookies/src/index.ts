@@ -1,5 +1,5 @@
 import type { FastifyPluginCallback } from 'fastify';
-import type { Cookie, CookieOptions, RouteHandlerMethod, Request, Reply, ReplyFull, SetCookie, SetCookieConsent } from './common';
+import type { Cookie, CookieOptions, RouteHandlerMethod, Request, Reply, ReplyFull, SetCookie, SetCookieConsent } from './common.js';
 
 import cookie from 'cookie';
 import Cryptr from 'cryptr';
@@ -175,4 +175,4 @@ export default fastifyConsentCookies;
 export type {
   FastifyConsentCookiePluginOptions as FastifyConsentCookiesOptions
 };
-export type { Cookie, CookieOptions, RouteHandlerMethod, Request, RequestFull, Reply, ReplyFull } from './common';
+export type { Cookie, CookieOptions, RouteHandlerMethod, Request, RequestFull, Reply, ReplyFull } from './common.js';

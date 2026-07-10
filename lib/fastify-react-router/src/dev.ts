@@ -1,11 +1,11 @@
 import type { FastifyPluginCallback } from 'fastify';
-import type { Options, ServerBuild } from './common';
+import type { Options, ServerBuild } from './common.js';
 
 import fp from 'fastify-plugin';
 import fastifyMiddie from '@fastify/middie';
 import { createServer as createViteServer } from 'vite';
-import { addHandler } from './common';
-import { createLogger } from './dev-logger';
+import { addHandler } from './common.js';
+import { createLogger } from './dev-logger.js';
 
 type FastifyReactRouterDevPluginOptions = Options;
 
@@ -36,4 +36,4 @@ export default fastifyReactRouterDev;
 export type {
   FastifyReactRouterDevPluginOptions as FastifyReactRouterDevOptions
 };
-export type { GetLoadContextFunction } from './common';
+export type { GetLoadContextFunction } from './common.js';

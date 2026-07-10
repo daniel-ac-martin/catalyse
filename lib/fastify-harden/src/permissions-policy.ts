@@ -1,4 +1,4 @@
-import { isDefined } from './common';
+import { isDefined } from './common.js';
 
 export type PPOptions = {
 };

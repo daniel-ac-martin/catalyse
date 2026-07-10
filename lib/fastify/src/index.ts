@@ -9,7 +9,7 @@ import _Fastify from 'fastify';
 import fastifyRateLimit from '@fastify/rate-limit';
 import fastifyAuth, { AuthMethod } from '@react-foundry/fastify-auth';
 import fastifyHarden from '@react-foundry/fastify-harden';
-import { NodeEnv } from './config-helpers';
+import { NodeEnv } from './config-helpers.js';
 
 type SessionOptions = Required<FastifyAuthOptions>['session'];
 export type IsFunction = (() => Promise<boolean>) | (() => boolean);
@@ -174,4 +174,4 @@ export default Fastify;
 export type { FastifyInstance, RouteHandlerMethod };
 export { AuthMethod };
 export { SessionStore } from '@react-foundry/fastify-auth';
-export * from './config-helpers';
+export * from './config-helpers.js';

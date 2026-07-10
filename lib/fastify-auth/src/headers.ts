@@ -1,6 +1,6 @@
-import type { AuthBagger } from './common';
+import type { AuthBagger } from './common.js';
 
-import { fromExtractor } from './common';
+import { fromExtractor } from './common.js';
 
 // Accept authentication from upstream via headers
 
