@@ -42,7 +42,7 @@
     "openid-client": "^5.7.1"
   },
   "devDependencies": {
-    "fastify": "5.9.0",
+    "fastify": "5.10.0",
     "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
     "ts-jest": "29.4.11",
