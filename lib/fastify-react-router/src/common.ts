@@ -3,10 +3,8 @@
 
 import type { FastifyInstance, FastifyRequest } from 'fastify';
 import type {
-  AppLoadContext,
   RouterContext,
-  ServerBuild,
-  UNSAFE_MiddlewareEnabled as MiddlewareEnabled
+  ServerBuild
 } from 'react-router';
 import type { RouteHandlerMethod } from '@react-foundry/fastify-auth';
 import type { FastifyReply } from '@react-foundry/fastify-harden';
@@ -18,9 +16,7 @@ import { createRequest, sendResponse } from './fetch.js';
 
 type MaybePromise<T> = T | Promise<T>;
 
-type LoadContext = MiddlewareEnabled extends true
-  ? RouterContextProvider
-  : AppLoadContext;
+type LoadContext = RouterContextProvider;
 
 export type GetLoadContextFunction = (
   req: FastifyRequest,
@@ -52,7 +48,7 @@ export const addHandler = (
 
     const nonce = reply.cspNonce;
     const user = req.user;
-    const context: RouterContextProvider | AppLoadContext = await getLoadContext?.(req, reply) ?? new RouterContextProvider();
+    const context: RouterContextProvider = await getLoadContext?.(req, reply) ?? new RouterContextProvider();
 
     if (context instanceof RouterContextProvider) {
       context.set(cspNonceContext, nonce as any);
