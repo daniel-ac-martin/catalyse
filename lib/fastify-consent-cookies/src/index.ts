@@ -1,7 +1,7 @@
 import type { FastifyPluginCallback } from 'fastify';
 import type { Cookie, CookieOptions, RouteHandlerMethod, Request, Reply, ReplyFull, SetCookie, SetCookieConsent } from './common.js';
 
-import cookie from 'cookie';
+import { parseCookie, stringifySetCookie } from 'cookie';
 import Cryptr from 'cryptr';
 import fp from 'fastify-plugin';
 
@@ -73,7 +73,7 @@ const fastifyConsentCookiesPlugin: FastifyPluginCallback<FastifyConsentCookiePlu
   fastify.decorateReply('setCookieConsent');
 
   fastify.addHook('preHandler', async (req: Request, reply: Reply) => {
-    const cookieData = cookie.parse(req.headers.cookie || '');
+    const cookieData = parseCookie(req.headers.cookie || '');
     const _consent = cookieData[consentCookie.name]
     const consent = _consent || '';
     const active: Record<string, Cookie> = (
@@ -142,7 +142,7 @@ const fastifyConsentCookiesPlugin: FastifyPluginCallback<FastifyConsentCookiePlu
           req.log.warn(`Attempting to set cookie, '${name}', which is ${overrun} bytes larger than allowed (4kiB) and likely to be rejected`);
         }
 
-        this.header('Set-Cookie', cookie.serialize(name, content, {
+        this.header('Set-Cookie', stringifySetCookie({
           path: '/', // Cover entire site
           domain: undefined, // Do NOT cover subdomains (yes, really)
           sameSite: 'strict', // Some CSRF protection
@@ -150,7 +150,9 @@ const fastifyConsentCookiesPlugin: FastifyPluginCallback<FastifyConsentCookiePlu
           ...defaults,
           ...declaration,
           ...options,
-          httpOnly
+          httpOnly,
+          name,
+          value: content
         }))
       } else {
         throw new Error(`No consent for cookie, "${name}".`);
