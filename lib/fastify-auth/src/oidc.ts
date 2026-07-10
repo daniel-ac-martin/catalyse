@@ -1,6 +1,5 @@
 import type { AuthBagger, Deserialize, SubRouteHandlerMethod, Serialize, UserProfile } from './common.js';
 
-import base64url from 'base64url';
 import { Client, Issuer, custom, generators } from 'openid-client';
 import { createError } from '@fastify/error';
 import { id } from './common.js';
@@ -47,6 +46,10 @@ const resourceToRoles: Reducer<any[], string[]> = (acc, [x, y]) => ([
 
 const BadSession = createError('FST_BAD_SESSION', 'Unable to verify session', 409);
 
+const base64UrlDecode = (v: string): string => (
+  Buffer.from(v, 'base64url').toString('utf8')
+);
+
 export const oidc: AuthBagger<Options> = async ({
   clientId,
   clientSecret,
@@ -72,7 +75,7 @@ export const oidc: AuthBagger<Options> = async ({
 
   const authInfo = (accessToken?: string, refreshToken?: string, idToken?: string, userinfo: object = {}): AuthInfo => {
     const extractJWTClaims = (token?: string) => token && JSON.parse(
-      base64url.decode(
+      base64UrlDecode(
         token.split('.')[1]
       )
     ) || {};
