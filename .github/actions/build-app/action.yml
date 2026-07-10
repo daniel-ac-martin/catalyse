@@ -1,5 +1,5 @@
 name: Build application
-description: Build a Catalyse application
+description: Build a react-foundry application
 inputs:
   app:
     required: false

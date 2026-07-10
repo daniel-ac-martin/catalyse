@@ -1,5 +1,5 @@
 name: Set-up
-description: Set-up for building, testing and deployment of standalone Catalyse apps
+description: Set-up for building, testing and deployment of standalone react-foundry apps
 inputs:
   node:
     description: The version of Node.js to use.
