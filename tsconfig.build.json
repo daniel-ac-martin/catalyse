@@ -4,6 +4,9 @@
     "composite": true,
     "declaration": true,
     "resolveJsonModule": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "types": [
+      "vite/client"
+    ]
   }
 }
