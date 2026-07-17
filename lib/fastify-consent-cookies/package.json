@@ -39,7 +39,7 @@
     "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
     "ts-jest": "29.4.11",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "dependencies": {
     "cookie": "^2.0.1",
