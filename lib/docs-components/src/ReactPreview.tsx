@@ -5,11 +5,13 @@ import { format } from 'prettier/standalone';
 import prettierEstree from 'prettier/plugins/estree';
 import parserHtml from 'prettier/plugins/html';
 import parserBabel from 'prettier/plugins/babel';
-import reactElementToJSXString from 'react-element-to-jsx-string';
+import _reactElementToJSXString from 'react-element-to-jsx-string';
 import Prism from 'prismjs';
 import { StandardProps, classBuilder } from '@react-foundry/component-helpers';
 import { memoize } from '@react-foundry/memoize';
 import { Tabs } from '@react-foundry/tabs';
+
+const reactElementToJSXString: typeof _reactElementToJSXString = (_reactElementToJSXString as any).default || _reactElementToJSXString;
 
 import 'prismjs/components/prism-jsx.min';
 
