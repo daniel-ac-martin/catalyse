@@ -13,6 +13,12 @@ export type Anchor = AnchorProps & {
 };
 
 export type Item = Anchor & {
+  /**
+   * Whether the link is active only on its own page, rather than on its descendants too.
+   * Defaults to `true` for the site root and `false` otherwise, since every page is a
+   * descendant of '/' and a root link would otherwise be active everywhere.
+   */
+  exact?: boolean
   /** Subitems */
   items?: Item[]
 };
@@ -34,8 +40,8 @@ const AnchorListInner: FC<AnchorListProps> = ({
 }) => {
   const classes = classBuilder('penultimate-anchor-list', classBlock, classModifiers, className);
   const isActive = useIsActive();
-  const processItem = ({ children, text, href, items, ...anchorAttrs }: Item, i: number) => {
-    const active = isActive(href || '', false);
+  const processItem = ({ children, exact, text, href, items, ...anchorAttrs }: Item, i: number) => {
+    const active = isActive(href || '', exact ?? href === '/');
 
     return (
       <li key={i} className={classes('item', active ? 'active' : undefined)}>
@@ -81,7 +87,7 @@ export const AnchorList: FC<AnchorListProps> = ({
     !needSuspense ? content : (
       <Suspense fallback={
         <Component {...attrs} className={classes()}>
-          {items.map(({ children, text, href, ...anchorAttrs }, i) => (
+          {items.map(({ children, exact, items, text, href, ...anchorAttrs }, i) => (
             <li key={i} className={classes('item')}>
               <A {...anchorAttrs} classBlock={classes('link')} href={href}>{children || text}</A>
             </li>
