@@ -39,4 +39,51 @@ describe('AnchorList', () => {
     it('with the correct text for the 2nd link', async () => expect(screen.getAllByRole('link')[1]).toHaveTextContent('Two'));
     it('with the correct text for the 3rd link', async () => expect(screen.getAllByRole('link')[2]).toHaveTextContent('Three'));
   });
+
+  // The test router puts us on '/current', so these cover a descendant of the site root.
+  const activeClass = 'penultimate-anchor-list__item--active';
+
+  describe('when given an item for the site root and one for the current page', () => {
+    const props: AnchorListProps = {
+      items: [
+        { href: '/', text: 'Home' },
+        { href: '/current', text: 'Current' }
+      ]
+    };
+
+    beforeEach(async () => {
+      render(h(AnchorList, props));
+    });
+
+    it('does not mark the root item as active', async () => expect(screen.getAllByRole('listitem')[0]).not.toHaveClass(activeClass));
+    it('marks the current page\'s item as active', async () => expect(screen.getAllByRole('listitem')[1]).toHaveClass(activeClass));
+  });
+
+  describe('when given an item for the site root with \'exact\' set to false', () => {
+    const props: AnchorListProps = {
+      items: [
+        { href: '/', exact: false, text: 'Home' }
+      ]
+    };
+
+    beforeEach(async () => {
+      render(h(AnchorList, props));
+    });
+
+    it('marks it as active', async () => expect(screen.getByRole('listitem')).toHaveClass(activeClass));
+  });
+
+  describe('when given an item for an ancestor page', () => {
+    const props: AnchorListProps = {
+      items: [
+        { href: '/cur', text: 'Not an ancestor' }
+      ]
+    };
+
+    beforeEach(async () => {
+      render(h(AnchorList, props));
+    });
+
+    it('does not treat a common prefix as an ancestor', async () => expect(screen.getByRole('listitem')).not.toHaveClass(activeClass));
+  });
 });
