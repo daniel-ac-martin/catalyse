@@ -10,7 +10,12 @@ export default defineConfig({
     minify: false // Needed to get proper JSX snippets (only useful for docs)
   },
   plugins: [
-    reactDocgenTypescript(),
+    reactDocgenTypescript({
+      compilerOptions: {},
+      include: [
+        '../../components/*/src/**/*.ts*'
+      ]
+    }),
     csf(),
     html(),
     mdx(),
