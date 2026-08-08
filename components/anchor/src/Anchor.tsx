@@ -8,8 +8,12 @@ import { URI } from '@react-foundry/uri';
 
 import '../assets/Anchor.scss';
 
+export type ActiveMatching = 'strict' | 'loose';
+
 export type AnchorProps = StandardProps & AnchorHTMLAttributes<HTMLAnchorElement> & {
   children?: ReactNode
+  /** Whether to consider the anchor active when on a sub-page (loose) or only on the exact page in the href (strict) */
+  activeMatching?: ActiveMatching
   /** Whether to force the link to be treated as external (useful for internal links that are NOT handled by the application) */
   forceExternal?: boolean
 };
@@ -20,6 +24,7 @@ const supportedProtocols = [
 ];
 
 const AnchorInner: FC<AnchorProps> = ({
+  activeMatching = 'strict',
   children,
   classBlock,
   classModifiers: _classModifiers = [],
@@ -29,7 +34,7 @@ const AnchorInner: FC<AnchorProps> = ({
   ...attrs
 }) => {
   const isMounted = useIsMounted();
-  const active = useIsActive()(href || '');
+  const active = useIsActive()(href || '', activeMatching !== 'loose');
   const current = useLocation();
   const classModifiers = [
     active ? 'active' : '',
