@@ -1,11 +1,11 @@
 .penultimate-react-preview {
-  background-color: white;
   border-width: 1px 1px 1px 1px;
   border-style: solid;
   border-color: silver;
   margin: 1em 0;
 
   &__stories {
+    background-color: inherit;
     border-width: 0 0 1px 0;
     border-style: inherit;
     border-color: inherit;
