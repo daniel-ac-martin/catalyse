@@ -2,15 +2,66 @@ import { createElement as h } from 'react';
 import { render, screen } from '@react-foundry/component-test-helpers';
 import Anchor from '../src/Anchor';
 
+const activeClass = 'penultimate-anchor--active';
+
 describe('Anchor', () => {
   describe('when given a href with a relative URL', () => {
-    beforeEach(async () => {
-      render(h(Anchor, { href: '/location' }, 'My link'));
+    describe('and the URL is the current page', () => {
+      beforeEach(async () => {
+        render(h(Anchor, { href: '/current' }, 'My link'));
+      });
+
+      it('is a link', async () => expect(screen.getByRole('link')).toBeInTheDocument());
+      it('to the HRef provided', async () => expect(screen.getByRole('link')).toHaveAttribute('href', '/current'));
+      it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
+      it('is marked as active', async () => expect(screen.getByRole('link')).toHaveClass(activeClass));
     });
 
-    it('is a link', async () => expect(screen.getByRole('link')).toBeInTheDocument());
-    it('to the HRef provided', async () => expect(screen.getByRole('link')).toHaveAttribute('href', '/location'));
-    it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
+    describe('and the URL is NOT the current page', () => {
+      beforeEach(async () => {
+        render(h(Anchor, { href: '/location' }, 'My link'));
+      });
+
+      it('is a link', async () => expect(screen.getByRole('link')).toBeInTheDocument());
+      it('to the HRef provided', async () => expect(screen.getByRole('link')).toHaveAttribute('href', '/location'));
+      it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
+      it('is NOT marked as active', async () => expect(screen.getByRole('link')).not.toHaveClass(activeClass));
+    });
+
+    describe('and the URL is the parent of the current page', () => {
+      describe('and the activeMatching prop is NOT set', () => {
+        beforeEach(async () => {
+          render(h(Anchor, { href: '/' }, 'My link'));
+        });
+
+        it('is a link', async () => expect(screen.getByRole('link')).toBeInTheDocument());
+        it('to the HRef provided', async () => expect(screen.getByRole('link')).toHaveAttribute('href', '/'));
+        it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
+        it('is NOT marked as active', async () => expect(screen.getByRole('link')).not.toHaveClass(activeClass));
+      });
+
+      describe('and the activeMatching prop is set to \'strict\'', () => {
+        beforeEach(async () => {
+          render(h(Anchor, { href: '/', activeMatching: 'strict' }, 'My link'));
+        });
+
+        it('is a link', async () => expect(screen.getByRole('link')).toBeInTheDocument());
+        it('to the HRef provided', async () => expect(screen.getByRole('link')).toHaveAttribute('href', '/'));
+        it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
+        it('is NOT marked as active', async () => expect(screen.getByRole('link')).not.toHaveClass(activeClass));
+      });
+
+      describe('and the activeMatching prop is set to \'loose\'', () => {
+        beforeEach(async () => {
+          render(h(Anchor, { href: '/', activeMatching: 'loose' }, 'My link'));
+        });
+
+        it('is a link', async () => expect(screen.getByRole('link')).toBeInTheDocument());
+        it('to the HRef provided', async () => expect(screen.getByRole('link')).toHaveAttribute('href', '/'));
+        it('with the text provided', async () => expect(screen.getByRole('link')).toHaveTextContent('My link'));
+        it('is marked as active', async () => expect(screen.getByRole('link')).toHaveClass(activeClass));
+      });
+    });
   });
 
   describe.skip('when given a href with an absolute URL', () => {

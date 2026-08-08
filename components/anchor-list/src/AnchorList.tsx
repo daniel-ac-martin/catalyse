@@ -13,12 +13,6 @@ export type Anchor = AnchorProps & {
 };
 
 export type Item = Anchor & {
-  /**
-   * Whether the link is active only on its own page, rather than on its descendants too.
-   * Defaults to `true` for the site root and `false` otherwise, since every page is a
-   * descendant of '/' and a root link would otherwise be active everywhere.
-   */
-  exact?: boolean
   /** Subitems */
   items?: Item[]
 };
@@ -40,12 +34,17 @@ const AnchorListInner: FC<AnchorListProps> = ({
 }) => {
   const classes = classBuilder('penultimate-anchor-list', classBlock, classModifiers, className);
   const isActive = useIsActive();
-  const processItem = ({ children, exact, text, href, items, ...anchorAttrs }: Item, i: number) => {
-    const active = isActive(href || '', exact ?? href === '/');
+  const processItem = ({ activeMatching, children, text, href, items, ...anchorAttrs }: Item, i: number) => {
+    const exact = (
+      activeMatching === undefined
+      ? href === '/'
+      : activeMatching === 'strict'
+    );
+    const active = isActive(href || '', exact);
 
     return (
       <li key={i} className={classes('item', active ? 'active' : undefined)}>
-        <A {...anchorAttrs} classBlock={classes('link')} href={href}>{children || text}</A>
+        <A {...anchorAttrs} classBlock={classes('link')} href={href} activeMatching={activeMatching}>{children || text}</A>
         { !(active && items) ? null : (
           <Component className={classes('subitems')}>
             {items.map(processItem)}
@@ -87,7 +86,7 @@ export const AnchorList: FC<AnchorListProps> = ({
     !needSuspense ? content : (
       <Suspense fallback={
         <Component {...attrs} className={classes()}>
-          {items.map(({ children, exact, items, text, href, ...anchorAttrs }, i) => (
+          {items.map(({ children, items, text, href, ...anchorAttrs }, i) => (
             <li key={i} className={classes('item')}>
               <A {...anchorAttrs} classBlock={classes('link')} href={href}>{children || text}</A>
             </li>
