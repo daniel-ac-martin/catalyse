@@ -305,8 +305,8 @@ importers:
         version: 14.2.6(supports-color@8.1.1)
     devDependencies:
       '@chromatic-com/storybook':
-        specifier: 5.2.1
-        version: 5.2.1(storybook@10.5.7(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/react@19.2.18)(prettier@3.9.6)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
+        specifier: 5.3.0
+        version: 5.3.0(storybook@10.5.7(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/react@19.2.18)(prettier@3.9.6)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       '@storybook/addon-a11y':
         specifier: 10.5.7
         version: 10.5.7(storybook@10.5.7(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/react@19.2.18)(prettier@3.9.6)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
@@ -1969,8 +1969,8 @@ packages:
   '@bufbuild/protobuf@2.10.0':
     resolution: {integrity: sha512-fdRs9PSrBF7QUntpZpq6BTw58fhgGJojgg39m9oFOJGZT+nip9b0so5cYY1oWl5pvemDLr0cPPsH46vwThEbpQ==}
 
-  '@chromatic-com/storybook@5.2.1':
-    resolution: {integrity: sha512-z6I7NJk/0VngA64y5TNYaB4Hc2X8+90n4op6lBt9PvWk5TmIlFLDqdX33rlrwbNRkkYijVgA/wO04rVYXi5Mlg==}
+  '@chromatic-com/storybook@5.3.0':
+    resolution: {integrity: sha512-gMAfVYJnF/tjdY8C3Q54KYz/low2NFjPIZMpCqSFuMUiTJ2DNWCTb7mFhuuzZ1iduWFDhewlJyilFmvKcEDYRA==}
     engines: {node: '>=20.0.0', yarn: '>=1.22.18'}
     peerDependencies:
       storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0
@@ -3556,12 +3556,6 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@testing-library/user-event@14.6.3':
-    resolution: {integrity: sha512-6dBq67jT8lE+JTE8Exm02Kt6ze43hz1jdiSpSJwtTZiT1xQQ6b7nZYTTQ9njdArdU8XklOwaDp/AbT/eYSKF4g==}
-    engines: {node: '>=12', npm: '>=6'}
-    peerDependencies:
-      '@testing-library/dom': '>=7.21.4'
-
   '@testing-library/user-event@14.6.4':
     resolution: {integrity: sha512-QCGwP6QrjypBLwyj5cuyfVamkaIEy/XGY+1VDehbtbQqOggYmTFpFOdWR5mPz14vX8vXLMVjDHlRNBcClyO9ew==}
     engines: {node: '>=12', npm: '>=6'}
@@ -4209,8 +4203,9 @@ packages:
     resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
     engines: {node: '>= 20.19.0'}
 
-  chromatic@16.10.0:
-    resolution: {integrity: sha512-nFsztmnu7rFiGafUJgXvLUNpqmRylz92eNvzBoJNTKKQj4EQUyxznwnfpf1dTs7hXtWD8JwcH92jADydaHA1sw==}
+  chromatic@18.2.0:
+    resolution: {integrity: sha512-xyTKDhBQPDd4qrsXhJK7GAJyIStpRoSTs4b7EtPyliSL0luej3DcqkeCZ9osHxbiLXiViNyWfMxo5Xgzejex8A==}
+    engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -8355,10 +8350,10 @@ snapshots:
 
   '@bufbuild/protobuf@2.10.0': {}
 
-  '@chromatic-com/storybook@5.2.1(storybook@10.5.7(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/react@19.2.18)(prettier@3.9.6)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))':
+  '@chromatic-com/storybook@5.3.0(storybook@10.5.7(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/react@19.2.18)(prettier@3.9.6)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))':
     dependencies:
       '@neoconfetti/react': 1.0.0
-      chromatic: 16.10.0
+      chromatic: 18.2.0
       jsonfile: 6.2.0
       storybook: 10.5.7(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/react@19.2.18)(prettier@3.9.6)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       strip-ansi: 7.1.2
@@ -9723,10 +9718,6 @@ snapshots:
       '@types/react': 19.2.18
       '@types/react-dom': 19.2.4(@types/react@19.2.18)
 
-  '@testing-library/user-event@14.6.3(@testing-library/dom@10.4.1)':
-    dependencies:
-      '@testing-library/dom': 10.4.1
-
   '@testing-library/user-event@14.6.4(@testing-library/dom@10.4.1)':
     dependencies:
       '@testing-library/dom': 10.4.1
@@ -10394,7 +10385,7 @@ snapshots:
     dependencies:
       readdirp: 5.0.0
 
-  chromatic@16.10.0:
+  chromatic@18.2.0:
     dependencies:
       semver: 7.8.5
 
@@ -13569,7 +13560,7 @@ snapshots:
       '@storybook/icons': 2.0.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@testing-library/dom': 10.4.1
       '@testing-library/jest-dom': 6.9.1
-      '@testing-library/user-event': 14.6.3(@testing-library/dom@10.4.1)
+      '@testing-library/user-event': 14.6.4(@testing-library/dom@10.4.1)
       '@vitest/expect': 3.2.4
       '@vitest/spy': 3.2.4
       '@webcontainer/env': 1.1.1
