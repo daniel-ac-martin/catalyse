@@ -109,8 +109,8 @@ importers:
         specifier: 8.3.0
         version: 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)
       isbot:
-        specifier: 5.2.2
-        version: 5.2.2
+        specifier: 5.2.1
+        version: 5.2.1
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -240,8 +240,8 @@ importers:
         specifier: 8.3.0
         version: 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)
       isbot:
-        specifier: 5.2.2
-        version: 5.2.2
+        specifier: 5.2.1
+        version: 5.2.1
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -377,8 +377,8 @@ importers:
         specifier: 8.3.0
         version: 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)
       isbot:
-        specifier: 5.2.2
-        version: 5.2.2
+        specifier: 5.2.1
+        version: 5.2.1
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -5210,8 +5210,8 @@ packages:
     resolution: {integrity: sha512-I+NmIfBHUl+r2wcDd6JwE9yWje/PIVY/R5/CmV8dXLZd5K+L9X2klAOwfAHNnondLXkbHyTAleQAWonpTJBTtw==}
     engines: {node: '>= 18.0.0'}
 
-  isbot@5.2.2:
-    resolution: {integrity: sha512-iQcBXcd+Rv/pkubRyGh2utW2j1oPG5hZY6TUhVPpqK4G+o3IbxpJNx04hgksjc/N7GK5pEorUxDeg31cFgEk/w==}
+  isbot@5.2.1:
+    resolution: {integrity: sha512-dJ+LpKyClQZ7NG+j3OensC/mAZkGpukE9YUrgPYvAZj2doVL0edfDgywTUh5CXa0o+nW9a1V9e5+CJTX8+SxRw==}
     engines: {node: '>=18'}
 
   isexe@2.0.0:
@@ -9352,7 +9352,7 @@ snapshots:
       dedent: 1.7.2
       es-module-lexer: 2.3.0
       exit-hook: 5.1.0
-      isbot: 5.2.2
+      isbot: 5.2.1
       jsesc: 3.1.0
       lodash: 4.18.1
       p-map: 7.0.4
@@ -11467,7 +11467,7 @@ snapshots:
 
   isbinaryfile@5.0.6: {}
 
-  isbot@5.2.2: {}
+  isbot@5.2.1: {}
 
   isexe@2.0.0: {}
 
